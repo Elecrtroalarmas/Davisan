@@ -1,6 +1,19 @@
 import React, { Component } from 'react';
+import { ThemeProvider } from 'styled-components';
 import ChatBot from 'react-simple-chatbot';
 import '../styles/chatStyle.css';
+
+const chatTheme = {
+  background: '#f5f8fb', // Color de fondo rojo
+  fontFamily: 'Helvetica Neue',
+  headerBgColor: '#ff0000',
+  headerFontColor: '#fff',
+  headerFontSize: '15px',
+  botBubbleColor: '#ff0000', // Color de burbuja del bot rojo
+  botFontColor: '#fff',
+  userBubbleColor: '#fff',
+  userFontColor: '#4a4a4a',
+};
 
 class ChatComponent extends Component {
   constructor(props) {
@@ -16,14 +29,16 @@ class ChatComponent extends Component {
   };
 
   render() {
-    const preguntasFrecuentesUrl = 'https://www.google.com/?hl=es'; // Reemplaza con la URL correcta
-    const trabajaConNosotrosUrl = 'https://www.ejemplo.com/trabaja-con-nosotros'; // Reemplaza con la URL correcta
-    const whatsappUrl = 'https://www.ejemplo.com/whatsapp'; // Reemplaza con la URL correcta
-    const masInformacionUrl = 'https://www.ejemplo.com/mas-informacion'; // Reemplaza con la URL correcta
-    const pagoDeFacturasUrl = 'https://www.ejemplo.com/pago-de-facturas'; // Reemplaza con la URL correcta
+    const preguntasFrecuentesUrl = 'https://www.google.com/?hl=es'; 
+    const trabajaConNosotrosUrl = 'https://www.google.com/?hl=es'; 
+    const whatsappUrl = 'https://www.google.com/?hl=es'; 
+    const masInformacionUrl = 'https://www.google.com/?hl=es'; 
+    const pagoDeFacturasUrl = 'https://www.google.com/?hl=es'; 
 
     return (
+      <ThemeProvider theme={chatTheme}>
       <ChatBot
+        
         steps={[
           {
             id: '1',
@@ -169,6 +184,7 @@ class ChatComponent extends Component {
           },
         ]}
       />
+      </ThemeProvider>
     );
   }
 }
