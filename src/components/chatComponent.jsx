@@ -4,13 +4,13 @@ import ChatBot from 'react-simple-chatbot';
 import '../styles/chatStyle.css';
 
 const chatTheme = {
-  background: '#f5f8fb', // Color de fondo rojo
-  fontFamily: 'Helvetica Neue',
+  background: '#f5f8fb', 
+  fontFamily: 'Montserrat',
   headerBgColor: '#ff0000',
   headerFontColor: '#fff',
-  headerFontSize: '15px',
-  botBubbleColor: '#ff0000', // Color de burbuja del bot rojo
-  botFontColor: '#fff',
+  headerFontSize: '20px',
+  botBubbleColor: '#eff5fc', 
+  botFontColor: '#000000',
   userBubbleColor: '#fff',
   userFontColor: '#4a4a4a',
 };
@@ -39,10 +39,14 @@ class ChatComponent extends Component {
       <ThemeProvider theme={chatTheme}>
       <ChatBot
         
+        headerTitle="Amanda"
+
+        botAvatar="https://cdn-icons-png.flaticon.com/512/4598/4598770.png"
+
         steps={[
           {
             id: '1',
-            message: 'Hola, soy un chatbot. ¿Cuál es tu nombre?',
+            message: 'Hola, soy Amanda, parte del equipo de Davisan. ¿Cuál es tu nombre?',
             trigger: 'get_name',
           },
           {

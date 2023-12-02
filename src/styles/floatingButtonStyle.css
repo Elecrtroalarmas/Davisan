@@ -1,0 +1,23 @@
+.floating-button {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    padding: 10px;
+    background: url('https://cdn-icons-png.flaticon.com/512/4598/4598770.png') center center no-repeat;
+    background-size: cover;
+    border: none;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+  }
+  
+  .floating-button-container {
+    position: fixed;
+    bottom: 20px; /* Ajusta según sea necesario */
+    right: 20px; /* Ajusta según sea necesario */
+    display: flex;
+  }
+  
+  
