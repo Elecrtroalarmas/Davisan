@@ -2,6 +2,8 @@ import React, { Component } from 'react';
 import { ThemeProvider } from 'styled-components';
 import ChatBot from 'react-simple-chatbot';
 import '../styles/chatStyle.css';
+//import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import {} from '@fortawesome/free-solid-svg-icons';
 
 const chatTheme = {
   background: '#f5f8fb', 
@@ -37,6 +39,7 @@ class ChatComponent extends Component {
 
     return (
       <ThemeProvider theme={chatTheme}>
+        
       <ChatBot
         
         headerTitle="Amanda"
@@ -87,11 +90,11 @@ class ChatComponent extends Component {
             component: (
               <div
                 style={{
-                  backgroundColor: 'purple', // Color de fondo morado
-                  borderRadius: '10px',     // Bordes circulares
-                  padding: '10px',           // Relleno interno
-                  textAlign: 'center',       // Texto centrado
-                  margin: '10px',            // Margen exterior
+                  backgroundColor: 'red', 
+                  borderRadius: '10px',     
+                  padding: '10px',           
+                  textAlign: 'center',       
+                  margin: '10px',            
                 }}
               >
                 <a
@@ -99,8 +102,8 @@ class ChatComponent extends Component {
                   target="_blank"
                   rel="noopener noreferrer"
                   style={{
-                    color: 'white', // Color de texto blanco
-                    textDecoration: 'none', // Sin subrayado
+                    color: 'white', 
+                    textDecoration: 'none', 
                   }}
                 >
                   Preguntas frecuentes
@@ -118,14 +121,30 @@ class ChatComponent extends Component {
           {
             id: 'trabaja_con_nosotros_url',
             component: (
-              <div>
-                <a href={trabajaConNosotrosUrl} target="_blank" rel="noopener noreferrer">
-                  {trabajaConNosotrosUrl}
+              <div
+                style={{
+                  backgroundColor: 'red',
+                  borderRadius: '10px',
+                  padding: '10px',
+                  textAlign: 'center',
+                  margin: '10px',
+                }}
+              >
+                <a
+                  href={trabajaConNosotrosUrl}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  style={{
+                    color: 'white',
+                    textDecoration: 'none',
+                  }}
+                >
+                  Trabaja con nosotros
                 </a>
               </div>
             ),
             end: true,
-          },
+          },          
           {
             id: 'contactanos',
             message: '¿Cómo prefieres comunicarte con nosotros?',
@@ -148,7 +167,11 @@ class ChatComponent extends Component {
             component: (
               <div>
                 <a href={whatsappUrl} target="_blank" rel="noopener noreferrer">
-                  {whatsappUrl}
+                  <img
+                    src="https://cdn.icon-icons.com/icons2/3685/PNG/512/whatsapp_logo_icon_229310.png"
+                    alt="whatsapp"
+                    style={{ width: '50px', height: '50px' }}  
+                  />
                 </a>
               </div>
             ),
@@ -162,14 +185,30 @@ class ChatComponent extends Component {
           {
             id: 'mas_informacion_url',
             component: (
-              <div>
-                <a href={masInformacionUrl} target="_blank" rel="noopener noreferrer">
-                  {masInformacionUrl}
+              <div
+                style={{
+                  backgroundColor: 'red',
+                  borderRadius: '10px',
+                  padding: '10px',
+                  textAlign: 'center',
+                  margin: '10px',
+                }}
+              >
+                <a
+                  href={masInformacionUrl}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  style={{
+                    color: 'white',
+                    textDecoration: 'none',
+                  }}
+                >
+                  Mas información
                 </a>
               </div>
             ),
             end: true,
-          },
+          },          
           {
             id: 'pago_de_facturas',
             message: 'Para hacer pagos de factura, puedes darle al botón de la parte izquierda de PSE o dirigirte al siguiente link:',
@@ -180,7 +219,10 @@ class ChatComponent extends Component {
             component: (
               <div>
                 <a href={pagoDeFacturasUrl} target="_blank" rel="noopener noreferrer">
-                  {pagoDeFacturasUrl}
+                  <img src="https://seeklogo.com/images/P/pse-logo-B00717880A-seeklogo.com.png" 
+                  alt="PSE" 
+                  style={{ width: '60px', height: '60px' }}
+                  />
                 </a>
               </div>
             ),

@@ -23,7 +23,7 @@ class FloatingButton extends Component {
         <div className="floating-button-container">
           {this.state.isChatVisible && <ChatComponent />}
   
-          <button onClick={this.toggleChat} className="floating-button">
+          <button title="chat" onClick={this.toggleChat} className="floating-button">
             {this.state.isChatVisible ? '' : ' '}
           </button>
         </div>
