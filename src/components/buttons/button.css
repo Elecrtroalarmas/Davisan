@@ -1,0 +1,14 @@
+.reusable-btn{
+    background-color: black;
+    color: var(--light-color);
+    border: none;
+    padding: .8rem 1.2rem;
+    font-size: var(--font-size);
+    cursor: pointer;
+}
+
+.reusable-btn:hover{
+    background-color: var(--secondary-color);
+    color: var(--light-color);
+    transition: all 0.3s ease-in-out;
+}
