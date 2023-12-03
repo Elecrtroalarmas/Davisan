@@ -96,13 +96,12 @@ main section:nth-child(2) .image {
   align-items: center;
 }
 
-main section:nth-child(2) .image img{
-    width: 100%;
-    height: 100%;
-    max-width: 526px;
-    max-height: 360px;
+main section:nth-child(2) .image img {
+  width: 100%;
+  height: 100%;
+  max-width: 526px;
+  max-height: 360px;
 }
-
 
 /* END SECOND SECTION */
 
@@ -234,17 +233,22 @@ main section:nth-child(5) .promt .sub_promt .options {
     height: 100%;
     width: 100%;
     text-align: center;
+    padding-left: 0;
   }
   main section .promt .options {
     justify-content: center;
   }
 
-  main section:nth-child(2){
+  main section:nth-child(2) {
     flex-direction: column;
   }
 }
 
 @media screen and (max-width: 720px) {
+  main section:nth-child(n + 3) .promt .sub_promt {
+    width: 90%;
+  }
+
   main section:nth-child(4) .promt > .n1,
   main section:nth-child(4) .promt > .n2 {
     height: 40px;
