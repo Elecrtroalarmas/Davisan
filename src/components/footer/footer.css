@@ -29,6 +29,7 @@ footer{
     justify-content: flex-start;
     flex-direction: column;
     color: white;
+    text-align: center;
 }
 
 
@@ -37,8 +38,9 @@ footer a{
     text-decoration: none;
 }
 
-.socialmedia img{
-width: 80%;
+.socialmedia {
+    display: flex;
+    justify-content: space-around;
 }
 
 .sb-footer-links-div h4{

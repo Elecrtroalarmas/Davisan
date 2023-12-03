@@ -1,6 +1,7 @@
 import * as React from "react"
 import { FaBars, FaTimes } from "react-icons/fa";
 import "./header.css";
+import { Link } from "gatsby";
 
 export default function Header() {
   const navRef = React.useRef();
@@ -15,15 +16,15 @@ export default function Header() {
       <nav ref={navRef}>
         <ul>
           <li>
-            <a className="active" href="/">
-              Home
-            </a>
+            <Link className="active" to="/">
+              About Us
+            </Link>
           </li>
           <li>
-            <a href="/login">Ingresar</a>
+            <Link to="/">Services</Link>
           </li>
           <li>
-            <a href="/register">Registrarse</a>
+            <Link to="/">Products</Link>
           </li>
           <button className="nav-btn nav-close-btn" onClick={showNavBar}>
             <FaTimes />
