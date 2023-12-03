@@ -1,215 +1,268 @@
-main{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    min-height: 100vh;
-    width: 100vw;
-    background-color: #f5f5f5;
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  width: 100%;
+  background-color: #f5f5f5;
 }
 
-main section{
-    width: 100%;
-    height: 700px;
-    border: 1px solid black;
-    display: flex;
+main section {
+  width: 100%;
+  min-height: 700px;
+  border: 1px solid black;
+  display: flex;
 }
 
-main section:nth-child(1){
-    background-image: url('https://t3.ftcdn.net/jpg/02/48/42/64/360_F_248426448_NVKLywWqArG2ADUxDq6QprtIzsF82dMF.jpg');
-    background-repeat: no-repeat;
-    background-size:contain;
-    background-position: center;
+main section:nth-child(1) {
+  background-image: url("https://t3.ftcdn.net/jpg/02/48/42/64/360_F_248426448_NVKLywWqArG2ADUxDq6QprtIzsF82dMF.jpg");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
 }
 
-main section .promt{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    padding-left: 4rem;
-    height: 100%;
-    width: 30%;
-    background-color: rgba(0,0,0,0.5);
-    gap: 2rem;
+main section .promt {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding-left: 4rem;
+  min-height: 700px;
+  width: 40%;
+  background-color: rgba(0, 0, 0, 0.5);
+  gap: 2rem;
 }
 
-main section .promt .options{
-    display: flex;
-    align-items: center;
-    justify-content: flex-start;
-    width: 100%;
-    gap: 2rem;
+main section .promt .options {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  width: 100%;
+  gap: 2rem;
 }
 
 /* START FIRST SECTION */
 
-main section:nth-child(1) .promt h1{
-    font-size: 3rem;
-    color: white;
+main section:nth-child(1) .promt h1 {
+  font-size: 3rem;
+  color: white;
 }
 
-main section:nth-child(1) .promt p{
-    font-size: 1rem;
-    color: white;
-
+main section:nth-child(1) .promt p {
+  font-size: 1rem;
+  color: white;
 }
 
-main section:nth-child(1) .promt .options button:nth-child(2){
-    background-color: transparent;
-    border: 1px solid white;
+main section:nth-child(1) .promt .options button:nth-child(2) {
+  background-color: transparent;
+  border: 1px solid white;
 }
 
 /* END FIRST SECTION */
 
 /* START SECOND SECTION */
 
-main section:nth-child(2) .promt{
-    flex: 1;
+main section:nth-child(2) {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
 }
 
-main section:nth-child(2) .promt h1{
-    font-size: 2.5rem;
-    color: black;
+main section:nth-child(2) .promt {
+  flex: 1;
 }
 
-main section:nth-child(2) .promt p{
-    font-size: 1rem;
-    color: black;
+main section:nth-child(2) .promt h1 {
+  font-size: 2.5rem;
+  color: black;
+}
+
+main section:nth-child(2) .promt p {
+  font-size: 1rem;
+  color: black;
 }
 
 main section:nth-child(2) .promt .options {
-    justify-content: space-around;
+  justify-content: space-around;
 }
 
-main section:nth-child(2) .image{
-    flex: 2;
-    height: 100%;
-    display: flex;
-    justify-content: center;
+main section:nth-child(2) .image {
+  flex: 2;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
+
+main section:nth-child(2) .image img{
+    width: 100%;
+    height: 100%;
+    max-width: 526px;
+    max-height: 360px;
+}
+
 
 /* END SECOND SECTION */
 
 /* START THIRD SECTION */
 
-
-main section:nth-child(n+3) .promt{
-    padding: 0 2rem;
-    flex: 1;
-    text-align: center;
+main section:nth-child(n + 3) .promt {
+  padding: 0 2rem;
+  flex: 1;
+  text-align: center;
 }
 
-main section:nth-child(n+3) .promt .sub_promt{
-    width: 50%;
-    display: flex;
-    flex-direction: column;
-    gap: 1rem;
+main section:nth-child(n + 3) .promt .sub_promt {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
 }
 
-main section:nth-child(n+3) .promt h1{
-    font-size: 2.5rem;
-    color: black;
+main section:nth-child(n + 3) .promt h1 {
+  font-size: 2.5rem;
+  color: black;
 }
 
-main section:nth-child(n+3) .promt p{
-    font-size: 1rem;
-    color: black;
+main section:nth-child(n + 3) .promt p {
+  font-size: 1rem;
+  color: black;
 }
 
-main section:nth-child(3) .promt .elements{
-    display: flex;
-    justify-content: space-around;
-    gap: 4rem;
+main section:nth-child(3) .promt .elements {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  gap: 4rem;
 }
 
-main section:nth-child(3) .promt .elements .item{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    flex: 1;
+main section:nth-child(3) .promt .elements .item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  flex: 1;
 }
 
-main section:nth-child(3) .promt .elements .item svg{
-    width: 60px;
-    height: 60px;
+main section:nth-child(3) .promt .elements .item svg {
+  width: 60px;
+  height: 60px;
 }
 
 main section:nth-child(3) .promt .options {
-    justify-content: center
-    ;
-    gap: 2rem;
+  justify-content: center;
+  gap: 2rem;
 }
 
 /* END THIRD SECTION */
 /* START FOURTH SECTION */
 
 main section:nth-child(4) .promt > .n1,
-main section:nth-child(4) .promt > .n2{
-    position: absolute;
-    background-color: white;
-    height: 60px;
-    width: 60px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    border-radius: 50%;
-    border: 1px solid black;
-    cursor: pointer;
+main section:nth-child(4) .promt > .n2 {
+  position: absolute;
+  background-color: white;
+  height: 60px;
+  width: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  border: 1px solid black;
+  cursor: pointer;
 }
 
-main section:nth-child(4) .promt > .n1{
-    left: 5rem;
+main section:nth-child(4) .promt > .n1 {
+  left: 5rem;
 }
 
-main section:nth-child(4) .promt > .n2{
-    right: 5rem;
-    rotate: 180deg;
+main section:nth-child(4) .promt > .n2 {
+  right: 5rem;
+  rotate: 180deg;
 }
 
 main section:nth-child(4) .promt > .n1 svg,
-main section:nth-child(4) .promt > .n2 svg{
-    width: 25px;
-    height: 25px;
+main section:nth-child(4) .promt > .n2 svg {
+  width: 25px;
+  height: 25px;
 }
 
-main section:nth-child(4) .promt .person{
-    padding: 0 2rem;
-    flex: 1;
-    text-align: center;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    gap: 1rem;
+main section:nth-child(4) .promt .person {
+  padding: 0 2rem;
+  flex: 1;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
 }
 
-main section:nth-child(4) .promt .person svg{
-    width: 70px;
-    height: 70px;
-    background-color: white;
-    padding: 1rem;
-    border-radius: 50%;
+main section:nth-child(4) .promt .person svg {
+  width: 70px;
+  height: 70px;
+  background-color: white;
+  padding: 1rem;
+  border-radius: 50%;
 }
 
-main section:nth-child(4) .promt .person .person_info{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    gap: .5rem;
+main section:nth-child(4) .promt .person .person_info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
 }
 
 /* END FOURTH SECTION */
 
 /* START FIFTH SECTION */
 
-main section:nth-child(5) .promt .sub_promt .options{
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    gap: 2rem;
+main section:nth-child(5) .promt .sub_promt .options {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
 }
 
 /* END FIFTH SECTION */
+
+/* BEGIN: Media Query for Big Screens */
+@media screen and (max-width: 1024px) {
+  main section .promt {
+    height: 100%;
+    width: 100%;
+    text-align: center;
+  }
+  main section .promt .options {
+    justify-content: center;
+  }
+
+  main section:nth-child(2){
+    flex-direction: column;
+  }
+}
+
+@media screen and (max-width: 720px) {
+  main section:nth-child(4) .promt > .n1,
+  main section:nth-child(4) .promt > .n2 {
+    height: 40px;
+    width: 40px;
+  }
+  main section:nth-child(4) .promt > .n1 {
+    left: 1rem;
+  }
+
+  main section:nth-child(4) .promt > .n2 {
+    right: 1rem;
+    rotate: 180deg;
+  }
+
+  main section:nth-child(4) .promt > .n1 svg,
+  main section:nth-child(4) .promt > .n2 svg {
+    width: 15px;
+    height: 15px;
+  }
+}
+/* END: Media Query for Big Screens */
