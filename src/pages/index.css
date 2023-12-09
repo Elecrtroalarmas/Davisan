@@ -115,31 +115,37 @@ main .CTA-section .promt{
   text-align: center;
 }
 
-main section:nth-child(n + 3) .promt .sub_promt {
+main .services-section .promt .sub_promt,
+main .testimonial-section .promt .sub_promt,
+main .CTA-section .promt .sub_promt{
   width: 50%;
   display: flex;
   flex-direction: column;
   gap: 1rem;
 }
 
-main section:nth-child(n + 3) .promt h1 {
+main .services-section .promt h1,
+main .testimonial-section .promt h1,
+main .CTA-section .promt h1 {
   font-size: 2.5rem;
   color: black;
 }
 
-main section:nth-child(n + 3) .promt p {
+main .services-section .promt p,
+main .testimonial-section .promt p,
+main .CTA-section .promt  p{
   font-size: 1rem;
   color: black;
 }
 
-main section:nth-child(3) .promt .elements {
+main .services-section .promt .elements {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
   gap: 4rem;
 }
 
-main section:nth-child(3) .promt .elements .item {
+main .services-section .promt .elements .item {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -147,12 +153,12 @@ main section:nth-child(3) .promt .elements .item {
   flex: 1;
 }
 
-main section:nth-child(3) .promt .elements .item svg {
+main .services-section .promt .elements .item svg {
   width: 60px;
   height: 60px;
 }
 
-main section:nth-child(3) .promt .options {
+main .services-section .promt .options {
   justify-content: center;
   gap: 2rem;
 }
@@ -160,8 +166,8 @@ main section:nth-child(3) .promt .options {
 /* END THIRD SECTION */
 /* START FOURTH SECTION */
 
-main section:nth-child(4) .promt > .n1,
-main section:nth-child(4) .promt > .n2 {
+main .testimonial-section .promt > .n1,
+main .testimonial-section .promt > .n2 {
   position: absolute;
   background-color: white;
   height: 60px;
@@ -174,22 +180,22 @@ main section:nth-child(4) .promt > .n2 {
   cursor: pointer;
 }
 
-main section:nth-child(4) .promt > .n1 {
+main .testimonial-section .promt > .n1 {
   left: 5rem;
 }
 
-main section:nth-child(4) .promt > .n2 {
+main .testimonial-section .promt > .n2 {
   right: 5rem;
   rotate: 180deg;
 }
 
-main section:nth-child(4) .promt > .n1 svg,
-main section:nth-child(4) .promt > .n2 svg {
+main .testimonial-section .promt > .n1 svg,
+main .testimonial-section .promt > .n2 svg {
   width: 25px;
   height: 25px;
 }
 
-main section:nth-child(4) .promt .person {
+main .testimonial-section .promt .person {
   padding: 0 2rem;
   flex: 1;
   text-align: center;
@@ -200,7 +206,7 @@ main section:nth-child(4) .promt .person {
   gap: 1rem;
 }
 
-main section:nth-child(4) .promt .person svg {
+main .testimonial-section .promt .person svg {
   width: 70px;
   height: 70px;
   background-color: white;
@@ -208,7 +214,7 @@ main section:nth-child(4) .promt .person svg {
   border-radius: 50%;
 }
 
-main section:nth-child(4) .promt .person .person_info {
+main .testimonial-section .promt .person .person_info {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -251,22 +257,22 @@ main section:nth-child(5) .promt .sub_promt .options {
     width: 90%;
   }
 
-  main section:nth-child(4) .promt > .n1,
-  main section:nth-child(4) .promt > .n2 {
+  main .testimonial-section .promt > .n1,
+  main .testimonial-section .promt > .n2 {
     height: 40px;
     width: 40px;
   }
-  main section:nth-child(4) .promt > .n1 {
+  main .testimonial-section .promt > .n1 {
     left: 1rem;
   }
 
-  main section:nth-child(4) .promt > .n2 {
+  main .testimonial-section .promt > .n2 {
     right: 1rem;
     rotate: 180deg;
   }
 
-  main section:nth-child(4) .promt > .n1 svg,
-  main section:nth-child(4) .promt > .n2 svg {
+  main .testimonial-section .promt > .n1 svg,
+  main .testimonial-section .promt > .n2 svg {
     width: 15px;
     height: 15px;
   }
