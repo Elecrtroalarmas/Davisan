@@ -15,7 +15,7 @@ main section {
   display: flex;
 }
 
-main section:nth-child(1) {
+main .main-banner {
   background-image: url("https://t3.ftcdn.net/jpg/02/48/42/64/360_F_248426448_NVKLywWqArG2ADUxDq6QprtIzsF82dMF.jpg");
   background-repeat: no-repeat;
   background-size: contain;
@@ -44,17 +44,17 @@ main section .promt .options {
 
 /* START FIRST SECTION */
 
-main section:nth-child(1) .promt h1 {
+main .main-banner .promt h1 {
   font-size: 3rem;
   color: white;
 }
 
-main section:nth-child(1) .promt p {
+main .main-banner .promt p {
   font-size: 1rem;
   color: white;
 }
 
-main section:nth-child(1) .promt .options button:nth-child(2) {
+main .main-banner .promt .options button:nth-child(2) {
   background-color: transparent;
   border: 1px solid white;
 }
@@ -63,31 +63,31 @@ main section:nth-child(1) .promt .options button:nth-child(2) {
 
 /* START SECOND SECTION */
 
-main section:nth-child(2) {
+main .benefits-section {
   display: flex;
   flex-wrap: wrap;
   align-items: center;
 }
 
-main section:nth-child(2) .promt {
+main .benefits-section .promt {
   flex: 1;
 }
 
-main section:nth-child(2) .promt h1 {
+main .benefits-section .promt h1 {
   font-size: 2.5rem;
   color: black;
 }
 
-main section:nth-child(2) .promt p {
+main .benefits-section .promt p {
   font-size: 1rem;
   color: black;
 }
 
-main section:nth-child(2) .promt .options {
+main .benefits-section .promt .options {
   justify-content: space-around;
 }
 
-main section:nth-child(2) .image {
+main .benefits-section .image {
   flex: 2;
   height: 100%;
   width: 100%;
@@ -96,7 +96,7 @@ main section:nth-child(2) .image {
   align-items: center;
 }
 
-main section:nth-child(2) .image img {
+main .benefits-section .image img {
   width: 100%;
   height: 100%;
   max-width: 526px;
@@ -107,7 +107,9 @@ main section:nth-child(2) .image img {
 
 /* START THIRD SECTION */
 
-main section:nth-child(n + 3) .promt {
+main .services-section .promt,
+main .testimonial-section .promt,
+main .CTA-section .promt{
   padding: 0 2rem;
   flex: 1;
   text-align: center;
@@ -239,7 +241,7 @@ main section:nth-child(5) .promt .sub_promt .options {
     justify-content: center;
   }
 
-  main section:nth-child(2) {
+  main .benefits-section {
     flex-direction: column;
   }
 }
