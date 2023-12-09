@@ -71,33 +71,3 @@ main .infinite-scroll .container .card{
     transform: translateX(-100%);
   }
 }
-
-main .infinite-scroll .n1,
-main .infinite-scroll .n2 {
-    position: absolute;
-    background-color: white;
-    height: 60px;
-    width: 60px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    border-radius: 50%;
-    border: 1px solid black;
-    cursor: pointer;
-    z-index: 3;
-}
-
-main .infinite-scroll .n1 {
-  left: 5rem;
-}
-
-main .infinite-scroll .n2 {
-  right: 5rem;
-  rotate: 180deg;
-}
-
-main .infinite-scroll > .n1 svg,
-main .infinite-scroll > .n2 svg {
-  width: 25px;
-  height: 25px;
-}

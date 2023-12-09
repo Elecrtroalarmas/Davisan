@@ -17,12 +17,6 @@ const ServicesPage = () => {
           </p>
         </section>
         <section className="infinite-scroll">
-          <div className="n1">
-            <FaArrowLeftLong />
-          </div>
-          <div className="n2">
-            <FaArrowLeftLong />
-          </div>
           <div className="father">
             <div className="container">
               <div className="card">
@@ -136,6 +130,36 @@ const ServicesPage = () => {
                 </div>
               </div>
             </div>
+          </div>
+        </section>
+        <section className="benefits-section">
+          <div className="promt">
+            <h1>
+              Enhance Security with Our State-of-the-Art Physical Protection
+              Solutions
+            </h1>
+            <p>
+              Our physical security product offers advanced features and
+              cutting-edge technology to ensure the safety of your premises.
+              With our reliable solutions, you can have peace of mind knowing
+              that your property is well-protected.
+            </p>
+            <div className="options">
+              <div className="n1">
+                <h1>Quote</h1>
+                <p>Robust Security Features</p>
+              </div>
+              <div className="n2">
+                <h1>Quote</h1>
+                <p>Robust Security Features</p>
+              </div>
+            </div>
+          </div>
+          <div className="image">
+            <img
+              src="https://t3.ftcdn.net/jpg/02/48/42/64/360_F_248426448_NVKLywWqArG2ADUxDq6QprtIzsF82dMF.jpg"
+              alt="propImage"
+            />
           </div>
         </section>
       </main>
