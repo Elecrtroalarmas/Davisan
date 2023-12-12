@@ -3,6 +3,7 @@ import { FaBars, FaTimes } from "react-icons/fa";
 import "./header.css";
 import { Link } from "gatsby";
 
+
 export default function Header() {
   const navRef = React.useRef();
 
@@ -21,7 +22,9 @@ export default function Header() {
             </Link>
           </li>
           <li>
-            <Link to="/">Services</Link>
+            <Link to="/services">
+              services
+            </Link>
           </li>
           <li>
             <Link to="/">Products</Link>

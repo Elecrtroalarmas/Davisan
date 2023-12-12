@@ -1,6 +1,7 @@
 import React from "react";
 import Header from "../../components/header/header";
 import Footer from "../../components/footer/footer";
+import FloatingButton from "../../components/floatingButtonComponent";
 import { FaArrowLeftLong } from "react-icons/fa6";
 import "./index.css";
 
@@ -164,8 +165,11 @@ const ServicesPage = () => {
         </section>
       </main>
       <Footer />
+      <FloatingButton />
     </>
   );
 };
 
 export default ServicesPage;
+
+export const Head = () => <title>Services page</title>;
