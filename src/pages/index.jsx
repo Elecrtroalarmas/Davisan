@@ -14,7 +14,7 @@ const IndexPage = () => {
     <>
       <Header />
       <main>
-        <section>
+        <section className="main-banner">
           <div className="promt">
             <h1>Enhance your security with Our Trusted Solutions</h1>
             <p>
@@ -27,7 +27,7 @@ const IndexPage = () => {
             </div>
           </div>
         </section>
-        <section>
+        <section className="benefits-section">
           <div className="promt">
             <h1>
               Enhance Security with Our State-of-the-Art Physical Protection
@@ -57,7 +57,7 @@ const IndexPage = () => {
             />
           </div>
         </section>
-        <section>
+        <section className="services-section">
           <div className="promt">
             <div className="sub_promt">
               <p>Protecting What Matters Most</p>
@@ -114,7 +114,7 @@ const IndexPage = () => {
             </div>
           </div>
         </section>
-        <section>
+        <section className="testimonial-section">
           <div className="promt">
             <div className="n1">
               <FaArrowLeftLong />
@@ -140,7 +140,7 @@ const IndexPage = () => {
             </div>
           </div>
         </section>
-        <section>
+        <section className="CTA-section">
           <div className="promt">
             <div className="sub_promt">
               <h1>Unlock Your Security Potential</h1>
