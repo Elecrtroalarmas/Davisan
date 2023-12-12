@@ -1,7 +1,6 @@
 import * as React from "react";
 import Header from "../components/header/header";
 import Footer from "../components/footer/footer";
-import Button from "../components/buttons/button";
 import FloatingButton from "../components/floatingButtonComponent";
 import "./aboutUsStyle.css";
 
@@ -10,19 +9,6 @@ const AboutUs = () => {
     <>
       <Header />
       <main>
-        <section>
-          <div className="promt">
-            <h1>Enhance your security with Our Trusted Solutions</h1>
-            <p>
-              Our solutions are designed to help you to protect your business,
-              your customers, and your employees.
-            </p>
-            <div className="options">
-              <Button text="Learn More" />
-              <Button text="Contact us" />
-            </div>
-          </div>
-        </section>
         <section>
           <div className="contact-container">
             <div className="container">
