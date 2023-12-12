@@ -1,0 +1,47 @@
+.contact-container {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    margin-top: 20px;
+    margin-left: 20%;
+    margin-right: 20%;
+}
+
+.contact-box {
+    width: 48%;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+}
+
+.contact-box h2 {
+    margin-bottom: 25px;
+}
+
+.contact-box p {
+    margin-bottom: 20px;
+}
+
+
+.contact-box:first-child,
+.contact-box:last-child {
+    border: none;
+    margin-bottom: 20px; 
+}
+
+#map {
+    margin-top: 20px;
+    width: 100%;
+    max-width: 800px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    display: flex;
+    justify-content: center;
+    margin-left: 20%;
+}
+
+#map img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+}

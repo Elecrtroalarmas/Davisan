@@ -16,7 +16,7 @@ export default function Header() {
       <nav ref={navRef}>
         <ul>
           <li>
-            <Link className="active" to="/">
+            <Link className="active" to="/aboutUs">
               About Us
             </Link>
           </li>
