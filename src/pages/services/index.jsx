@@ -1,7 +1,6 @@
 import React from "react";
 import Header from "../../components/header/header";
 import Footer from "../../components/footer/footer";
-import { FaArrowLeftLong } from "react-icons/fa6";
 import "./index.css";
 
 const ServicesPage = () => {
