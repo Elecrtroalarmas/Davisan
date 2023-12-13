@@ -1,10 +1,10 @@
 import * as React from "react";
-import Header from "../components/header/header";
-import Footer from "../components/footer/footer";
-import FloatingButton from "../components/floatingButtonComponent";
-import "./aboutUsStyle.css";
+import Header from "../../components/header/header";
+import Footer from "../../components/footer/footer";
+import FloatingButton from "../../components/floatingButtonComponent";
+import "./index.css";
 
-const AboutUs = () => {
+const ContactUs = () => {
   return (
     <>
       <Header />
@@ -35,6 +35,6 @@ const AboutUs = () => {
   );
 };
 
-export default AboutUs;
+export default ContactUs;
 
-export const Head = () => <title>About Us Page</title>;
+export const Head = () => <title>ContactUs Page</title>;

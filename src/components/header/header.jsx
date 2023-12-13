@@ -27,7 +27,9 @@ export default function Header() {
             </Link>
           </li>
           <li>
-            <Link to="/">Products</Link>
+          <Link to="/ContactUs">
+              Contact Us
+            </Link>
           </li>
           <button className="nav-btn nav-close-btn" onClick={showNavBar}>
             <FaTimes />

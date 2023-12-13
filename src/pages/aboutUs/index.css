@@ -1,0 +1,57 @@
+
+  
+  .section-with-vertical-line {
+    position: relative;
+  }
+  
+  .vertical-line {
+    position: absolute;
+    height: 100%;
+    width: 2px; /* Ancho de la línea vertical */
+    background-color: #000; /* Color de la línea vertical */
+    left: 50%;
+    transform: translateX(-50%);
+  }
+
+  .dot {
+    position: absolute;
+    top: 10%; /* Ajusta la posición vertical del punto */
+    left: 50%;
+    transform: translateX(-50%);
+    width: 10px; 
+    height: 10px; 
+    background-color: red; 
+    border-radius: 50%; 
+    z-index: 1;
+    width: 15px; /* Ajusta el ancho del punto */
+    height: 15px; /* Ajusta la altura del punto */
+  }
+
+
+  
+  .date-title {
+  position: absolute;
+  top: 5px; /* Ajusta la posición vertical del título de la fecha */
+  left: 20px; /* Ajusta la posición horizontal del título de la fecha */
+  font-size: 18px; /* Tamaño de fuente del título de la fecha */
+  font-weight: bold; /* Texto en negrita */
+  color: #333; /* Color del título de la fecha */
+}
+
+.info-container {
+  position: absolute;
+  top: 5px; /* Ajusta la posición vertical del contenedor de información */
+  right: 20px; /* Ajusta la posición horizontal del contenedor de información */
+  text-align: center; /* Alinea el texto en el centro */
+}
+
+.info-text {
+  font-size: 16px; /* Tamaño de fuente del texto */
+  color: #333; /* Color del texto */
+}
+
+.info-image {
+  width: 300px; /* Ancho de la imagen */
+  height: auto; /* Altura automática de la imagen para mantener la proporción */
+}
+
