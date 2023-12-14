@@ -2,18 +2,28 @@ header{
     height: 80px;
     width: 100%;
     padding: 0 2rem;
-    background-color: var(--secondary-color);
-    color: var(--light-color);
+    border-bottom: 1px solid black;
 }
 
-header > h1{
-    color: var(--light-color);
-    font-size: calc(var(--font-size) * 2);
-    padding: 10px;
-    line-height: 80px;
-    padding: 0 10%;
-    font-weight: bold;
+header picture{
     float: left;
+    height: 70px;
+    width: 70px;
+}
+
+header picture img{
+    height: 100%;
+    width: 100%;
+    object-fit:contain;
+}
+
+header .logo{
+    float: left;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    height: 100%;
 }
 
 nav > ul{
@@ -29,15 +39,16 @@ nav > ul > li{
 }
 
 nav > ul > li > a{
-    color: var(--light-color);
     font-size: var(--font-size);
     padding: 7px 14px;
     border-radius: var(--xs-border);
     text-transform: uppercase;
+    color: black;
 }
 
 nav > ul > li > a.active, a:hover{
     background-color: var(--primary-color);
+    color: white;
     transition: .5s;
 }
 
