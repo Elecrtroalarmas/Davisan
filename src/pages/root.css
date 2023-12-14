@@ -11,6 +11,10 @@
     --lg-border: 20px;
   }
   
+
+  @import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+
+  
   @media (max-width: 768px) {
     :root {
       --font-size: 14px;
@@ -33,7 +37,7 @@
   }
   
   body{
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Montserrat', sans-serif;
     overflow-x: hidden;
   }
   
