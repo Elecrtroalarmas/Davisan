@@ -1,8 +1,7 @@
-import * as React from "react"
+import * as React from "react";
 import { FaBars, FaTimes } from "react-icons/fa";
 import "./header.css";
 import { Link } from "gatsby";
-
 
 export default function Header() {
   const navRef = React.useRef();
@@ -13,7 +12,13 @@ export default function Header() {
 
   return (
     <header>
-      <h1 >Davisan</h1>
+      <div className="logo">
+        <picture>
+          <source srcSet="icon.png" />
+          <img src="icon.png" alt="logo" className="logo" />
+        </picture>
+          <h1>Davisan</h1>
+      </div>
       <nav ref={navRef}>
         <ul>
           <li>
@@ -22,9 +27,7 @@ export default function Header() {
             </Link>
           </li>
           <li>
-            <Link to="/services">
-              services
-            </Link>
+            <Link to="/services">services</Link>
           </li>
           <li>
           <Link to="/ContactUs">
@@ -44,4 +47,3 @@ export default function Header() {
     </header>
   );
 }
-
