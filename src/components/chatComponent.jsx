@@ -4,6 +4,7 @@ import ChatBot from 'react-simple-chatbot';
 import '../styles/chatStyle.css';
 //import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import {} from '@fortawesome/free-solid-svg-icons';
+import { Link } from "gatsby";
 
 const chatTheme = {
   background: '#f5f8fb', 
@@ -31,7 +32,6 @@ class ChatComponent extends Component {
   };
 
   render() {
-    const preguntasFrecuentesUrl = 'https://www.google.com/?hl=es'; 
     const trabajaConNosotrosUrl = 'https://www.google.com/?hl=es'; 
     const whatsappUrl = 'https://www.google.com/?hl=es'; 
     const masInformacionUrl = 'https://www.google.com/?hl=es'; 
@@ -90,24 +90,23 @@ class ChatComponent extends Component {
             component: (
               <div
                 style={{
-                  backgroundColor: 'red', 
-                  borderRadius: '10px',     
-                  padding: '10px',           
-                  textAlign: 'center',       
-                  margin: '10px',            
+                  backgroundColor: 'red',
+                  borderRadius: '10px',
+                  padding: '10px',
+                  textAlign: 'center',
+                  margin: '10px',
                 }}
               >
-                <a
-                  href={preguntasFrecuentesUrl}
-                  target="_blank"
-                  rel="noopener noreferrer"
+                <Link
+                  to="/preguntasFre"
+                  className="active"
                   style={{
-                    color: 'white', 
-                    textDecoration: 'none', 
+                    color: 'white',
+                    textDecoration: 'none',
                   }}
                 >
                   Preguntas frecuentes
-                </a>
+                </Link>
               </div>
             ),
             end: true,

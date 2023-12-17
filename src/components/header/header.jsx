@@ -15,7 +15,7 @@ export default function Header() {
       <div className="logo">
         <picture>
           <source srcSet="icon.png" />
-          <img src="icon.png" alt="logo" className="logo" />
+          <img src="/icon.png" alt="logo" className="logo" />
         </picture>
           <h1>Davisan</h1>
       </div>
