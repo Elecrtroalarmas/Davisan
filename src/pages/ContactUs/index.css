@@ -1,0 +1,47 @@
+.contact-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.contact-container > .container{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin-top: 2rem;
+    width: 100%;
+}
+
+.contact-container .contact-box {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.contact-container .contact-box > h2{
+    font-size: 2.5rem;
+    font-weight: 700;
+}
+
+.contact-container .contact-box h2 {
+    margin-bottom: 25px;
+}
+
+.contact-box p {
+    margin-bottom: 20px;
+}
+
+.contact-container .map {
+    width: 100%;
+    border-radius: 8px;
+    display: flex;
+    justify-content: center;
+    margin: 5rem 0;
+}
+
+.contact-container .map img {
+    border-radius: 8px;
+}

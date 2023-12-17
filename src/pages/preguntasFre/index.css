@@ -1,0 +1,103 @@
+.sectionfaq{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: f5f8ff;
+}
+
+.containerfaq{
+    margin: 0 40px;
+    max-width: 600px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.containerfaq h1{
+    color: #333;
+}
+
+.containerfaq .tab{
+    position: relative;
+    background-color: #fff;
+    padding: 0 20px 20px;
+    box-shadow: 0 15px  25px rgba(0,0,0,0.05);
+    border-radius: 5px;
+    overflow: hidden;
+
+}
+
+.containerfaq .tab input{
+    appearance: none;
+}
+
+.containerfaq .tab label{
+    /* cambio */
+    /* display: flex;  */
+    align-items: center;
+    cursor: pointer;
+}
+
+.containerfaq .tab label::after{
+    content: '+';
+    position: absolute;
+    right: 20px;
+    font-size: 2em;
+    color: rgba(0,0,0,0.1);
+    transition: transform 1s;
+}
+
+.containerfaq .tab:hover label::after{
+    color: #333;
+}
+
+.containerfaq .tab input:checked ~ label::after{
+    transform: rotate(135deg);
+}
+
+.containerfaq .tab label h2{
+    width: 40px;
+    height: 40px;
+    background: linear-gradient(135deg,#9d0303, #ee0808);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    font-size: 1.25em;
+    border-radius: 5px;
+    margin-right: 10px;
+    flex-shrink: 0;
+    margin-bottom: 0;
+}
+
+
+.containerfaq .tab label h3{
+    position: relative;
+    font-weight: 500; 
+    color: #333;
+    z-index: 10;
+    margin-bottom: 010px;
+}
+
+.containerfaq .tab .content {
+    max-height: 0;
+    transition: 0.3s;
+    overflow: hidden;
+    display: inline-block;
+    margin-top: 10px;
+}
+
+.containerfaq .tab input:checked + label .content {
+    max-height: 100vh;
+}
+
+.containerfaq .tab .content p{
+    position: relative;
+    padding: 10px 0;
+    color: #333;
+    z-index: 10;
+}

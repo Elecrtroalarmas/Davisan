@@ -1,7 +1,7 @@
 :root {
-    --primary-color: #78D330;
-    --secondary-color: #0F2D57;
-    --tertiary-color: #557EB8;
+    --primary-color: #eb3237;
+    --secondary-color: #373435;
+    --tertiary-color: #000000;
     --light-color: #f8f9fa;
     --dark-color: #343a40;
     --font-size: 16px;
@@ -10,6 +10,10 @@
     --md-border: 15px;
     --lg-border: 20px;
   }
+  
+
+  @import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+
   
   @media (max-width: 768px) {
     :root {
@@ -33,7 +37,7 @@
   }
   
   body{
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Montserrat', sans-serif;
     overflow-x: hidden;
   }
   
