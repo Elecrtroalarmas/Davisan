@@ -61,17 +61,38 @@ const ContactUs = () => {
                 <h3>Informacion de contacto</h3>
                 <div className="infoBox">
                   <div>
-                    <span></span>
+                    <span><img width="25" height="25" src="https://img.icons8.com/ios/25/FFFFFF/marker--v1.png" alt="marker--v1"/></span>
                     <p>
                       Sogamoso, Boyaca <br />
                       Colombia
                     </p>
                   </div>
+
+                  <div>
+                    <span><img width="25" height="25" src="https://img.icons8.com/ios/25/FFFFFF/new-post--v1.png" alt="new-post--v1"/></span>
+                    <a href="mailto:correo@gmail.com" target="_blank" rel="noopener noreferrer">correo@gmail.com</a>
+                  </div>
+
+                  <div>
+                    <span><img width="25" height="25" src="https://img.icons8.com/ios/25/FFFFFF/phone-message.png" alt="phone-message"/></span>
+                    <a href="tel:+573102581814" target="_blank" rel="noopener noreferrer">+57 310 258 1814</a>
+                  </div>
+
+                  <ul className="sci">
+                    <li><a href="https://www.facebook.com/people/Davisan-Ltda/pfbid0pcKk6CKpmmnHUxW9vdJYNEXXNGSHLsduiYweYynF18CPypeUKEXpu27D59kncDUbl/" target="_blank" rel="noopener noreferrer"><img width="35" height="35" src="https://img.icons8.com/ios-filled/50/FFFFFF/facebook-new.png" alt="facebook-new"/></a></li>
+                    <li><a href="https://twitter.com/?lang=es" target="_blank" rel="noopener noreferrer"><img width="35" height="35" src="https://img.icons8.com/ios-glyphs/35/FFFFFF/twitterx--v2.png" alt="twitterx--v2"/></a></li>
+                    <li><a href="https://www.linkedin.com/feed/" target="_blank" rel="noopener noreferrer"><img width="35" height="35" src="https://img.icons8.com/ios-filled/35/FFFFFF/linkedin-2--v1.png" alt="linkedin-2--v1"/></a></li>
+                    <li><a href="https://www.instagram.com/" target="_blank" rel="noopener noreferrer" ><img width="40" height="40" src="https://img.icons8.com/sf-regular/40/FFFFFF/instagram-new.png" alt="instagram-new"/></a></li>
+                  </ul>
+
                 </div>
               </div>
 
               {/* map box */}
-              <div className="contact map"></div>
+              <div className="contact map">
+              <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3969.9474911042407!2d-72.93463822453408!3d5.72070399426131!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e6a4570aa0a4e7f%3A0xf7e7d8ef4d4db0b4!2sDAVISAN%20LTDA!5e0!3m2!1ses-419!2sco!4v1703023305046!5m2!1ses-419!2sco" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+              </div>
+
             </div>
           </div>
         </section>
