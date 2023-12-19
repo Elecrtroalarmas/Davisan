@@ -11,11 +11,8 @@ const ContactUs = () => {
       <main>
         <section>
           <div className="contactUs">
-            <div className="title">
-              <h2>Contactanos</h2>
-            </div>
+            <h2>Contactanos</h2>
             <div className="box">
-
               {/* form box */}
               <div className="contact form">
                 <h3>Envia un mensaje</h3>
@@ -24,22 +21,22 @@ const ContactUs = () => {
                     <div className="row50">
                       <div className="inputBox">
                         <span>Nombre</span>
-                        <input type="text" placeholder="Juan"/>
+                        <input type="text" placeholder="Juan" />
                       </div>
                       <div className="inputBox">
                         <span>Apellido</span>
-                        <input type="text" placeholder="Maldonado"/>
+                        <input type="text" placeholder="Maldonado" />
                       </div>
                     </div>
 
                     <div className="row50">
                       <div className="inputBox">
                         <span>Email</span>
-                        <input type="mail" placeholder="juan123@gmail.com"/>
+                        <input type="mail" placeholder="juan123@gmail.com" />
                       </div>
                       <div className="inputBox">
                         <span>Telefono</span>
-                        <input type="number" placeholder="318 938 9874"/>
+                        <input type="number" placeholder="318 938 9874" />
                       </div>
                     </div>
 
@@ -52,11 +49,9 @@ const ContactUs = () => {
 
                     <div className="row100">
                       <div className="inputBox">
-                        <input type="submit" placeholder="Enviar"/>
+                        <input type="submit" placeholder="Enviar" />
                       </div>
                     </div>
-
-
                   </div>
                 </form>
               </div>
@@ -67,7 +62,10 @@ const ContactUs = () => {
                 <div className="infoBox">
                   <div>
                     <span></span>
-                    <p>Sogamoso, Boyaca <br/>Colombia</p>
+                    <p>
+                      Sogamoso, Boyaca <br />
+                      Colombia
+                    </p>
                   </div>
                 </div>
               </div>

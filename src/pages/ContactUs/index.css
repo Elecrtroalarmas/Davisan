@@ -4,11 +4,11 @@
     padding: 40px 100px;
 }
 
-.contactUs .title{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-size: 2em;
+.contactUs > h2{
+    font-size: 2.5em;
+    font-weight: 500;
+    margin-bottom: 20px;
+    text-align: center;
 }
 
 .contactUs .box {
@@ -42,13 +42,10 @@
 }
 
 .contact h3{
-     /* color: rgb(79, 8, 9); */
      font-weight: 500;
      font-size: 1.4em;
      margin-bottom: 10px;
 }
-
-
 
 .formBox{
     position: relative;
