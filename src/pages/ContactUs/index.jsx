@@ -16,34 +16,35 @@ const ContactUs = () => {
               {/* form box */}
               <div className="contact form">
                 <h3>Envia un mensaje</h3>
-                <form>
+                <form action="https://formspree.io/f/xnqeavrz"
+                method="POST">
                   <div className="formBox">
                     <div className="row50">
                       <div className="inputBox">
                         <span>Nombre</span>
-                        <input type="text" placeholder="Juan" />
+                        <input type="text" placeholder="Juan" name="nombre"/>
                       </div>
                       <div className="inputBox">
                         <span>Apellido</span>
-                        <input type="text" placeholder="Maldonado" />
+                        <input type="text" placeholder="Maldonado" name="apellido"/>
                       </div>
                     </div>
 
                     <div className="row50">
                       <div className="inputBox">
                         <span>Email</span>
-                        <input type="mail" placeholder="juan123@gmail.com" />
+                        <input type="mail" placeholder="juan123@gmail.com" name="email"/>
                       </div>
                       <div className="inputBox">
                         <span>Telefono</span>
-                        <input type="number" placeholder="318 938 9874" />
+                        <input type="number" placeholder="318 938 9874" name="telefono"/>
                       </div>
                     </div>
 
                     <div className="row100">
                       <div className="inputBox">
                         <span>Mensaje</span>
-                        <textarea placeholder="Escribe tu mensaje aqui..."></textarea>
+                        <textarea placeholder="Escribe tu mensaje aqui..." name="mensaje"></textarea>
                       </div>
                     </div>
 
@@ -90,7 +91,7 @@ const ContactUs = () => {
 
               {/* map box */}
               <div className="contact map">
-              <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3969.9474911042407!2d-72.93463822453408!3d5.72070399426131!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e6a4570aa0a4e7f%3A0xf7e7d8ef4d4db0b4!2sDAVISAN%20LTDA!5e0!3m2!1ses-419!2sco!4v1703023305046!5m2!1ses-419!2sco" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+              <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3969.9474911042407!2d-72.93463822453408!3d5.72070399426131!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e6a4570aa0a4e7f%3A0xf7e7d8ef4d4db0b4!2sDAVISAN%20LTDA!5e0!3m2!1ses-419!2sco!4v1703023305046!5m2!1ses-419!2sco" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" title="mapa Davisan"></iframe>
               </div>
 
             </div>
