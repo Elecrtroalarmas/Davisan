@@ -3,6 +3,7 @@ import Header from "../../components/header/header";
 import Footer from "../../components/footer/footer";
 import FloatingButton from "../../components/floatingButtonComponent";
 import { IoCloudOffline, IoCloudDone } from "react-icons/io5";
+import { InfiniteScroll } from "../../components/infinite-scroll/InfiniteScroll";
 import "./index.css";
 
 const ServicesPage = () => {
@@ -13,145 +14,11 @@ const ServicesPage = () => {
         <section className="infinite-scroll">
           <h1>Conoce Nuestros Servicios</h1>
           <div className="father">
-            <div className="container">
-              <div className="card">
-                <div className="card-image">
-                  <img
-                    src="https://t3.ftcdn.net/jpg/02/48/42/64/360_F_248426448_NVKLywWqArG2ADUxDq6QprtIzsF82dMF.jpg"
-                    alt="propImage"
-                  />
-                </div>
-                <div className="card-content">
-                  <h1>Escolta</h1>
-                </div>
-              </div>
-              <div className="card">
-                <div className="card-image">
-                  <img
-                    src="https://t3.ftcdn.net/jpg/02/48/42/64/360_F_248426448_NVKLywWqArG2ADUxDq6QprtIzsF82dMF.jpg"
-                    alt="propImage"
-                  />
-                </div>
-                <div className="card-content">
-                  <h1>Vigilancia Física</h1>
-                </div>
-              </div>
-              <div className="card">
-                <div className="card-image">
-                  <img
-                    src="https://t3.ftcdn.net/jpg/02/48/42/64/360_F_248426448_NVKLywWqArG2ADUxDq6QprtIzsF82dMF.jpg"
-                    alt="propImage"
-                  />
-                </div>
-                <div className="card-content">
-                  <h1>Servicio Técnico</h1>
-                </div>
-              </div>
-              <div className="card">
-                <div className="card-image">
-                  <img
-                    src="https://t3.ftcdn.net/jpg/02/48/42/64/360_F_248426448_NVKLywWqArG2ADUxDq6QprtIzsF82dMF.jpg"
-                    alt="propImage"
-                  />
-                </div>
-                <div className="card-content">
-                  <h1>Planta Física</h1>
-                </div>
-              </div>
-              <div className="card">
-                <div className="card-image">
-                  <img
-                    src="https://t3.ftcdn.net/jpg/02/48/42/64/360_F_248426448_NVKLywWqArG2ADUxDq6QprtIzsF82dMF.jpg"
-                    alt="propImage"
-                  />
-                </div>
-                <div className="card-content">
-                  <h1>Supervisión Motorizada</h1>
-                </div>
-              </div>
-              <div className="card">
-                <div className="card-image">
-                  <img
-                    src="https://t3.ftcdn.net/jpg/02/48/42/64/360_F_248426448_NVKLywWqArG2ADUxDq6QprtIzsF82dMF.jpg"
-                    alt="propImage"
-                  />
-                </div>
-                <div className="card-content">
-                  <h1>Central de Monitoreo</h1>
-                </div>
-              </div>
-            </div>
-            <div className="container">
-              <div className="card">
-                <div className="card-image">
-                  <img
-                    src="https://t3.ftcdn.net/jpg/02/48/42/64/360_F_248426448_NVKLywWqArG2ADUxDq6QprtIzsF82dMF.jpg"
-                    alt="propImage"
-                  />
-                </div>
-                <div className="card-content">
-                  <h1>Escolta</h1>
-                </div>
-              </div>
-              <div className="card">
-                <div className="card-image">
-                  <img
-                    src="https://t3.ftcdn.net/jpg/02/48/42/64/360_F_248426448_NVKLywWqArG2ADUxDq6QprtIzsF82dMF.jpg"
-                    alt="propImage"
-                  />
-                </div>
-                <div className="card-content">
-                  <h1>Vigilancia Física</h1>
-                </div>
-              </div>
-              <div className="card">
-                <div className="card-image">
-                  <img
-                    src="https://t3.ftcdn.net/jpg/02/48/42/64/360_F_248426448_NVKLywWqArG2ADUxDq6QprtIzsF82dMF.jpg"
-                    alt="propImage"
-                  />
-                </div>
-                <div className="card-content">
-                  <h1>Servicio Técnico</h1>
-                </div>
-              </div>
-              <div className="card">
-                <div className="card-image">
-                  <img
-                    src="https://t3.ftcdn.net/jpg/02/48/42/64/360_F_248426448_NVKLywWqArG2ADUxDq6QprtIzsF82dMF.jpg"
-                    alt="propImage"
-                  />
-                </div>
-                <div className="card-content">
-                  <h1>Planta Física</h1>
-                </div>
-              </div>
-              <div className="card">
-                <div className="card-image">
-                  <img
-                    src="https://t3.ftcdn.net/jpg/02/48/42/64/360_F_248426448_NVKLywWqArG2ADUxDq6QprtIzsF82dMF.jpg"
-                    alt="propImage"
-                  />
-                </div>
-                <div className="card-content">
-                  <h1>Supervisión Motorizada</h1>
-                </div>
-              </div>
-              <div className="card">
-                <div className="card-image">
-                  <img
-                    src="https://t3.ftcdn.net/jpg/02/48/42/64/360_F_248426448_NVKLywWqArG2ADUxDq6QprtIzsF82dMF.jpg"
-                    alt="propImage"
-                  />
-                </div>
-                <div className="card-content">
-                  <h1>Central de Monitoreo</h1>
-                </div>
-              </div>
-            </div>
+            <InfiniteScroll />
+            <InfiniteScroll />
           </div>
         </section>
-        <section className="benefits-section">
+        <section className="benefits-section" id="EC">
           <div className="promt">
             <h1>ESCOLTA</h1>
             <p>
@@ -171,7 +38,7 @@ const ServicesPage = () => {
             />
           </div>
         </section>
-        <section className="services-section">
+        <section className="services-section" id="SM">
           <div className="promt">
             <h1>SUPERVISIÓN MOTORIZADA</h1>
             <p>
@@ -209,7 +76,7 @@ const ServicesPage = () => {
             </div>
           </div>
         </section>
-        <section className="benefits-section inverse">
+        <section className="benefits-section inverse" id="PF">
           <div className="promt">
             <h1>PLANTA FÍSICA</h1>
             <p>
@@ -236,7 +103,7 @@ const ServicesPage = () => {
             />
           </div>
         </section>
-        <section className="benefits-section">
+        <section className="benefits-section" id="ST">
           <div className="promt">
             <h1>SERVICIO TÉCNICO</h1>
             <p>
@@ -274,7 +141,7 @@ const ServicesPage = () => {
             />
           </div>
         </section>
-        <section className="services-section">
+        <section className="services-section" id="CM">
           <div className="promt">
             <h1>CENTRAL DE MONITOREO</h1>
             <p>
@@ -334,7 +201,7 @@ const ServicesPage = () => {
             </div>
           </div>
         </section>
-        <section className="benefits-section">
+        <section className="benefits-section" id="VF">
           <div className="promt">
             <h1>VIGILANCIA FÍSICA CON O SIN ARMA</h1>
             <p>

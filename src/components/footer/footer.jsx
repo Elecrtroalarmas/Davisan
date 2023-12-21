@@ -1,6 +1,6 @@
 import React from "react";
 import { Link } from "gatsby";
-import { FaInstagram, FaLinkedinIn } from "react-icons/fa";
+import { FaInstagram, FaFacebook } from "react-icons/fa";
 import "./footer.css";
 
 function Footer() {
@@ -8,9 +8,14 @@ function Footer() {
     <footer>
       <div className="sb-footer section-padding">
         <div className="sb-footer-links">
-        <div className="sb-footer-links-div">
+          <div className="sb-footer-links-div">
             <picture>
-                <p>Logo</p>
+              <a href="https://www.supervigilancia.gov.co/">
+                <img
+                  src="https://supervigilancia.gov.co/info/supervigilancia/media/pub/thumbs/thpub_700X400_5437.webp"
+                  alt="SuperIntendencia de Vigilancia"
+                />
+              </a>
             </picture>
           </div>
           <div className="sb-footer-links-div">
@@ -45,7 +50,7 @@ function Footer() {
             <h4>Redes Sociales</h4>
             <div className="socialmedia">
               <FaInstagram />
-              <FaLinkedinIn />
+              <FaFacebook />
             </div>
           </div>
         </div>
