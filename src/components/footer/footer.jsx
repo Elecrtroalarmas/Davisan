@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "gatsby";
 import { FaInstagram, FaLinkedinIn } from "react-icons/fa";
 import "./footer.css";
 
@@ -35,9 +36,9 @@ function Footer() {
             </a>
           </div>
           <div className="sb-footer-links-div">
-            <h4>Partners</h4>
+            <h4>Información</h4>
             <a href="/employers">
-              <p>Swing tech</p>
+              <Link to="/preguntasFre">FAQ</Link>
             </a>
           </div>
           <div className="sb-footer-links-div">

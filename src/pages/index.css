@@ -81,6 +81,14 @@ main .benefits-section .promt .options {
   justify-content: space-around;
 }
 
+main .benefits-section .promt .options .n1,
+main .benefits-section .promt .options .n2 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
 main .benefits-section .image {
   flex: 2;
   height: 100%;
@@ -155,6 +163,11 @@ main .services-section .promt .elements .item svg {
 main .services-section .promt .options {
   justify-content: center;
   gap: 2rem;
+}
+
+main .services-section .promt .options .n1,
+main .services-section .promt .options .n2{
+  flex: 1;
 }
 
 /* END THIRD SECTION */
@@ -269,6 +282,11 @@ main section:nth-child(5) .promt .sub_promt .options {
   main .testimonial-section .promt > .n2 svg {
     width: 15px;
     height: 15px;
+  }
+
+  main .services-section .promt .options {
+    display: flex;
+    flex-wrap: wrap;
   }
 }
 /* END: Media Query for Big Screens */
