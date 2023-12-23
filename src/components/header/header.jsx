@@ -23,16 +23,16 @@ export default function Header() {
         <ul>
           <li>
             <Link className="active" to="/aboutUs">
-              About Us
+              Acerca de nosotros
             </Link>
           </li>
           <li>
-            <Link to="/services">services</Link>
+            <Link to="/services">Servicios</Link>
           </li>
           <li>
           <Link to="/ContactUs">
-              Contact Us
-            </Link>
+            Contáctanos
+          </Link>
           </li>
           <button className="nav-btn nav-close-btn" onClick={showNavBar}>
             <FaTimes />

@@ -43,7 +43,7 @@ function Footer() {
           <div className="sb-footer-links-div">
             <h4>Información</h4>
             <a href="/employers">
-              <Link to="/preguntasFre">FAQ</Link>
+              <Link to="/preguntasFre">Preguntas Frecuentes</Link>
             </a>
           </div>
           <div className="sb-footer-links-div">

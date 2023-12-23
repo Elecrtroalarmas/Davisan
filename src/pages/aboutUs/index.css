@@ -1,3 +1,84 @@
+.about-us-section {
+  padding: 50px 0;
+  text-align: center;
+}
+
+.about-us-container {
+  max-width: 1200px; 
+  margin: 0 auto;
+}
+
+.about-us-content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.about-us-content img {
+  max-width: 600px; 
+  height: auto;
+  margin-bottom: 30px; 
+}
+
+.text-box {
+  flex: 1;
+  text-align: left;
+  margin-left: 4%;
+  padding-bottom: 8%;
+  padding-top: 4.5%;
+}
+
+.about-us-container h2 {
+  font-size: 42px;
+  margin-bottom: 7%;
+  padding-bottom: 15px;
+}
+
+
+.text-box p {
+  font-size: 20px;
+  line-height: 1.5;
+}
+
+
+.arrow-circle {
+  display: flex;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.arrow {
+  width: 0;
+  height: 0;
+  border-left: 20px solid transparent;
+  border-right: 20px solid transparent;
+  border-top: 30px solid red; 
+  animation: bounce 2s infinite; 
+  margin-top: 3.5%;
+  margin-right: 2%;
+}
+
+@keyframes bounce {
+  0%, 20%, 50%, 80%, 100% {
+    transform: translateY(0); 
+  }
+  40% {
+    transform: translateY(-10px); 
+  }
+  60% {
+    transform: translateY(-5px); 
+  }
+}
+
+.more-info {
+  margin-top: 10px;
+  font-size: 16px;
+}
+
+
+
+
 .timeline{
   position: relative;
   max-width: 1200px;
