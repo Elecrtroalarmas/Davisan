@@ -1,7 +1,7 @@
 import React, { useState, useRef, useEffect } from "react";
 import { FaBars, FaTimes } from "react-icons/fa";
 import "./header.css";
-import { Link } from "gatsby";
+import { Link, navigate } from "gatsby";
 
 export default function Header() {
   const [activeLink, setActiveLink] = useState("");
@@ -23,9 +23,9 @@ export default function Header() {
 
   return (
     <header>
-      <div className="logo">
+      <div className="logo" onClick={() => navigate('/')}>
         <picture>
-          <source srcSet="icon.png" />
+          <source srcSet="/icon.png" />
           <img src="/icon.png" alt="logo" className="logo" />
         </picture>
         <h1>Davisan</h1>
@@ -35,7 +35,7 @@ export default function Header() {
           <li>
             <Link
               to="/aboutUs"
-              onClick={() => handleLinkClick("about")}
+              onClick={() => handleLinkClick("aboutUs/")}
               className={activeLink === "aboutUs/" ? "active" : ""}
             >
               About Us
@@ -44,7 +44,7 @@ export default function Header() {
           <li>
             <Link
               to="/services"
-              onClick={() => handleLinkClick("services")}
+              onClick={() => handleLinkClick("services/")}
               className={activeLink === "services/" ? "active" : ""}
             >
               services
@@ -53,7 +53,7 @@ export default function Header() {
           <li>
             <Link
               to="/ContactUs"
-              onClick={() => handleLinkClick("contact")}
+              onClick={() => handleLinkClick("ContactUs/")}
               className={activeLink === "ContactUs/" ? "active" : ""}
             >
               Contact Us

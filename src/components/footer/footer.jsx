@@ -1,5 +1,5 @@
 import React from "react";
-import { Link } from "gatsby";
+import { Link, navigate } from "gatsby";
 import { FaInstagram, FaFacebook } from "react-icons/fa";
 import "./footer.css";
 
@@ -9,13 +9,11 @@ function Footer() {
       <div className="sb-footer section-padding">
         <div className="sb-footer-links">
           <div className="sb-footer-links-div">
-            <picture>
-              <a href="https://www.supervigilancia.gov.co/">
-                <img
-                  src="https://supervigilancia.gov.co/info/supervigilancia/media/pub/thumbs/thpub_700X400_5437.webp"
-                  alt="SuperIntendencia de Vigilancia"
-                />
-              </a>
+            <picture
+              onClick={() => navigate("https://www.supervigilancia.gov.co/")}
+            >
+              <source srcSet="/superVigilancia.png" />
+              <img src="/superVigilancia.png" alt="Super Vigilancia" />
             </picture>
           </div>
           <div className="sb-footer-links-div">
