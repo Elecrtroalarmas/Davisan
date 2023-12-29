@@ -13,9 +13,32 @@ const AboutUs = () => {
       <>
         <Header />
         <main>
+        
+          <section className="about-us-section">
+            <div className="about-us-container">
+              <h2>Acerca de Nosotros</h2>
+              <div className="about-us-content">
+                <img src="https://davisan.com.co/img/trabajos/full/image-01-full.jpg" alt="Imagen de DAVISAN SECURITY LTDA" />
+                <div className="text-box">
+                  <p>
+                    DAVISAN SECURITY LTDA es una empresa Colombiana especializada en ofrecer servicios de seguridad privada integral. 
+                    Nuestro equipo profesional, altamente capacitado, se distingue por su respeto, determinación 
+                    y respaldo tecnológico de vanguardia. Nos dedicamos a proporcionar tranquilidad, seguridad 
+                    y confianza a nuestros clientes mediante soluciones integrales que abarcan tanto 
+                    la protección física como electrónica.
+                  </p>
+                  <div className="arrow-circle">
+                    <div className="arrow"></div>
+                    <p className="more-info">Conocenos más</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+
+
           <section className="section-with-vertical-line">
 
-            
             
             <div className="timeline">
 
@@ -109,6 +132,10 @@ const AboutUs = () => {
 
             </div>
 
+          </section>
+
+          <section>
+            <h1>Seccion de organigrama</h1>
           </section>
         </main>
         <Footer />
