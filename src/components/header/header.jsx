@@ -1,10 +1,21 @@
-import * as React from "react";
+import React, { useState, useRef, useEffect } from "react";
 import { FaBars, FaTimes } from "react-icons/fa";
 import "./header.css";
 import { Link } from "gatsby";
 
 export default function Header() {
-  const navRef = React.useRef();
+  const [activeLink, setActiveLink] = useState("");
+  const navRef = useRef();
+
+  useEffect(() => {
+    const initialActiveLink = window.location.pathname.replace("/", "");
+    console.log(initialActiveLink);
+    setActiveLink(initialActiveLink);
+  }, []);
+
+  const handleLinkClick = (link) => {
+    setActiveLink(link);
+  };
 
   const showNavBar = () => {
     navRef.current.classList.toggle("responsive_nav");
@@ -17,20 +28,34 @@ export default function Header() {
           <source srcSet="icon.png" />
           <img src="/icon.png" alt="logo" className="logo" />
         </picture>
-          <h1>Davisan</h1>
+        <h1>Davisan</h1>
       </div>
       <nav ref={navRef}>
         <ul>
           <li>
-            <Link className="active" to="/aboutUs">
+            <Link
+              to="/aboutUs"
+              onClick={() => handleLinkClick("about")}
+              className={activeLink === "aboutUs/" ? "active" : ""}
+            >
               About Us
             </Link>
           </li>
           <li>
-            <Link to="/services">services</Link>
+            <Link
+              to="/services"
+              onClick={() => handleLinkClick("services")}
+              className={activeLink === "services/" ? "active" : ""}
+            >
+              services
+            </Link>
           </li>
           <li>
-          <Link to="/ContactUs">
+            <Link
+              to="/ContactUs"
+              onClick={() => handleLinkClick("contact")}
+              className={activeLink === "ContactUs/" ? "active" : ""}
+            >
               Contact Us
             </Link>
           </li>
