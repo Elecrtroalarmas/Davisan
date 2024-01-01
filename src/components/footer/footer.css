@@ -32,6 +32,18 @@ footer{
     text-align: center;
 }
 
+.sb-footer-links-div picture{
+    width: 100%;
+    height: 100%;
+    cursor: pointer;
+}
+
+.sb-footer-links-div picture img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
 
 footer a{
     color: var(--light-color);

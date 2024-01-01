@@ -24,6 +24,7 @@ header .logo{
     align-items: center;
     gap: 1rem;
     height: 100%;
+    cursor: pointer;
 }
 
 nav > ul{
@@ -46,7 +47,8 @@ nav > ul > li > a{
     color: black;
 }
 
-nav > ul > li > a.active, a:hover{
+nav > ul > li > a.active, 
+nav > ul > li > a:hover{
     background-color: var(--primary-color);
     color: white;
     transition: .5s;
@@ -65,7 +67,7 @@ header .nav-btn{
     background-color: transparent;
     border: none;
     outline: none;
-    color: var(--light-color);
+    color: black;
     visibility: hidden;
     opacity: 0;
     font-size: var(--font-size);

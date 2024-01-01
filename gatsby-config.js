@@ -7,10 +7,11 @@ module.exports = {
     siteUrl: `https://www.yourdomain.tld`
   },
   plugins: ["gatsby-plugin-image", "gatsby-plugin-sharp", "gatsby-transformer-sharp", {
-    resolve: 'gatsby-source-filesystem',
+    resolve: 'gatsby-plugin-manifest',
     options: {
       "name": "images",
-      "path": "./src/images/"
+      "path": "./src/static/",
+      "icon": "./src/static/favicon.ico"
     },
     __key: "images"
   }]

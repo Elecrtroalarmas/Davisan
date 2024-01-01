@@ -9,7 +9,7 @@ import { Link } from "gatsby";
 const chatTheme = {
   background: '#f5f8fb', 
   fontFamily: 'Montserrat',
-  headerBgColor: '#ff0000',
+  headerBgColor: '#eb3237',
   headerFontColor: '#fff',
   headerFontSize: '20px',
   botBubbleColor: '#eff5fc', 
@@ -90,7 +90,7 @@ class ChatComponent extends Component {
             component: (
               <div
                 style={{
-                  backgroundColor: 'red',
+                  backgroundColor: '#eb3237',
                   borderRadius: '10px',
                   padding: '10px',
                   textAlign: 'center',
@@ -122,7 +122,7 @@ class ChatComponent extends Component {
             component: (
               <div
                 style={{
-                  backgroundColor: 'red',
+                  backgroundColor: '#eb3237',
                   borderRadius: '10px',
                   padding: '10px',
                   textAlign: 'center',
@@ -186,7 +186,7 @@ class ChatComponent extends Component {
             component: (
               <div
                 style={{
-                  backgroundColor: 'red',
+                  backgroundColor: '#eb3237',
                   borderRadius: '10px',
                   padding: '10px',
                   textAlign: 'center',
