@@ -35,6 +35,29 @@ const AboutUs = () => {
               </div>
             </div>
           </section>
+          
+
+          <section className="mission-vision-section">
+  <div className="mission-vision-container">
+    <h2>Misión y Visión</h2>
+
+    <div className="mission">
+      <h3>Misión</h3>
+      <p>
+        Brindar tranquilidad, seguridad y confianza a nuestros clientes, visitantes y usuarios, a través de soluciones integrales de protección física y electrónica, con un equipo humano Profesional, decidido y respetuoso, soportados en tecnología de punta.
+      </p>
+    </div>
+
+    <div className="vision">
+      <h3>Visión</h3>
+      <p>
+        DAVISAN SECURITY LTDA., será reconocida en Colombia como la empresa líder en brindar soluciones integrales de seguridad física, electrónica y satelital, brindando protección y tranquilidad a empresarios y familias, que depositan la confianza en nuestra organización.
+      </p>
+    </div>
+
+  </div>
+</section>
+
 
 
           <section className="section-with-vertical-line">
