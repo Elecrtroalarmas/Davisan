@@ -227,4 +227,4 @@ const ContactUs = () => {
 
 export default ContactUs;
 
-export const Head = () => <title>ContactUs Page</title>;
+export const Head = () => <title>Contáctanos</title>;

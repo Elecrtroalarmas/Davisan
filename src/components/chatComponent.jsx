@@ -34,7 +34,7 @@ class ChatComponent extends Component {
   render() {
     const trabajaConNosotrosUrl = 'https://www.google.com/?hl=es'; 
     const whatsappUrl = 'https://www.google.com/?hl=es'; 
-    const masInformacionUrl = 'https://www.google.com/?hl=es'; 
+    const masInformacionUrl = '/ContactUs/'; 
     const pagoDeFacturasUrl = 'https://www.google.com/?hl=es'; 
 
     return (
@@ -193,17 +193,16 @@ class ChatComponent extends Component {
                   margin: '10px',
                 }}
               >
-                <a
-                  href={masInformacionUrl}
-                  target="_blank"
-                  rel="noopener noreferrer"
+                <Link
+                  to="/ContactUs"
+                  className="active"
                   style={{
                     color: 'white',
                     textDecoration: 'none',
                   }}
                 >
-                  Mas información
-                </a>
+                  Más información
+                </Link>
               </div>
             ),
             end: true,

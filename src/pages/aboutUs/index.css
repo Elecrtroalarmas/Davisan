@@ -76,9 +76,60 @@
   font-size: 16px;
 }
 
+/* seccion mision vision */
+
+.mission-vision-section {
+  padding-right: 4%;
+  padding-left: 4%;
+}
+
+.mission-vision-container img{
+  width: 80%;
+  padding-left: 20%;
+}
+
+.mission-vision-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.mission-vision-header {
+  margin-bottom: 5%;
+}
+
+.mission-vision-header h2 {
+  font-size: 35px;
+  margin-bottom: 7%;
+  padding-bottom: 15px;
+}
+
+.mission-vision-content {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.mission, .vision {
+  width: 48%;
+}
 
 
+.mission h3,
+.vision h3 {
+  color: #333;
+  margin-bottom: 2%;
+  font-size: 30px;
+}
 
+.mission p,
+.vision p {
+  line-height: 1.8;
+  font-size: 18px;
+}
+
+
+/* seccion liniea de tiempo */
 .timeline{
   position: relative;
   max-width: 1200px;
@@ -257,4 +308,44 @@
     left: -15px;
   }
 
+
+}
+
+
+@media only screen and (max-width: 768px) {
+  .text-box {
+    flex: 1;
+    text-align: center;
+    margin: 0;
+  }
+
+  .about-us-content img {
+    max-width: 100%; /* Hacer la imagen ocupar el ancho completo */
+  }
+}
+
+/* Media query para pantallas aún más pequeñas */
+@media only screen and (max-width: 480px) {
+  .text-box {
+    padding: 4% 4.5%; /* Ajustar el espacio interior */
+  }
+
+  .about-us-container h2 {
+    font-size: 32px; /* Reducir el tamaño de la fuente para títulos */
+    margin-bottom: 5%;
+  }
+
+  .text-box p {
+    font-size: 16px; /* Reducir el tamaño de la fuente para párrafos */
+    text-align: justify;
+  }
+
+  .arrow {
+    margin-top: 0; /* Ajustar el espacio entre la flecha y el texto */
+  }
+
+  .more-info {
+    margin-top: 10px;
+    font-size: 14px; /* Reducir el tamaño de la fuente para el texto de "Conocenos más" */
+  }
 }

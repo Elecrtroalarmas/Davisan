@@ -233,4 +233,4 @@ const ServicesPage = () => {
 
 export default ServicesPage;
 
-export const Head = () => <title>Services page</title>;
+export const Head = () => <title>Servicios</title>;

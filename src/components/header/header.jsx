@@ -38,7 +38,7 @@ export default function Header() {
               onClick={() => handleLinkClick("aboutUs/")}
               className={activeLink === "aboutUs/" ? "active" : ""}
             >
-              About Us
+              Acerca de nosotros
             </Link>
           </li>
           <li>
@@ -47,7 +47,7 @@ export default function Header() {
               onClick={() => handleLinkClick("services/")}
               className={activeLink === "services/" ? "active" : ""}
             >
-              services
+              Servicios
             </Link>
           </li>
           <li>
@@ -56,7 +56,7 @@ export default function Header() {
               onClick={() => handleLinkClick("ContactUs/")}
               className={activeLink === "ContactUs/" ? "active" : ""}
             >
-              Contact Us
+              Contáctanos
             </Link>
           </li>
           <button className="nav-btn nav-close-btn" onClick={showNavBar}>

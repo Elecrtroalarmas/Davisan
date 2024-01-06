@@ -38,32 +38,57 @@ const AboutUs = () => {
           
 
           <section className="mission-vision-section">
-  <div className="mission-vision-container">
-    <h2>Misión y Visión</h2>
+            <div className="mission-vision-container">
+              <div className="mission-vision-header">
+                <h2>Misión y Visión</h2>
+              </div>
 
-    <div className="mission">
-      <h3>Misión</h3>
-      <p>
-        Brindar tranquilidad, seguridad y confianza a nuestros clientes, visitantes y usuarios, a través de soluciones integrales de protección física y electrónica, con un equipo humano Profesional, decidido y respetuoso, soportados en tecnología de punta.
-      </p>
-    </div>
+              <div className="mission-vision-content">
+                <div className="mission">
+                  <h3>Misión</h3>
+                  <p>
+                    Brindar tranquilidad, seguridad y confianza a nuestros clientes, visitantes y usuarios, 
+                    a través de soluciones integrales de protección física y electrónica, con un equipo humano 
+                    Profesional, decidido y respetuoso, soportados en tecnología de punta.
+                  </p>
 
-    <div className="vision">
-      <h3>Visión</h3>
-      <p>
-        DAVISAN SECURITY LTDA., será reconocida en Colombia como la empresa líder en brindar soluciones integrales de seguridad física, electrónica y satelital, brindando protección y tranquilidad a empresarios y familias, que depositan la confianza en nuestra organización.
-      </p>
-    </div>
+                  <picture>
+                    <source srcSet="/misionDavisan.png" />
+                    <img src="/misionDavisan.png" alt="Vigilante" />
+                  </picture>
 
-  </div>
-</section>
+                </div>
+
+                
+
+                <div className="vision">
+                  <h3>Visión</h3>
+                  <p>
+                    DAVISAN SECURITY LTDA., será reconocida en Colombia como la empresa líder en brindar 
+                    soluciones integrales de seguridad física, electrónica y satelital, brindando protección y
+                    tranquilidad a empresarios y familias, que depositan la confianza en nuestra organización.
+                  </p>
+
+                  <picture>
+                    <source srcSet="/visionDavisan.png" />
+                    <img src="/visionDavisan.png" alt="Vigilante" />
+                  </picture>
+                </div>
+
+              </div>
+            </div>
+          </section>
+
+          <section className="valores">
+            <h1>seccion de valores coorporativos</h1>
+          </section>
 
 
 
           <section className="section-with-vertical-line">
-
             
             <div className="timeline">
+
 
               {/* fecha 1 */}
               <div className="container left-container">
@@ -169,4 +194,4 @@ const AboutUs = () => {
 
 export default AboutUs;
 
-export const Head = () => <title>About Us page</title>;
+export const Head = () => <title>Acerca de nosotros</title>;
