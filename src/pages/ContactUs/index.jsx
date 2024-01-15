@@ -53,8 +53,10 @@ const ContactUs = () => {
               {/* form box */}
               <div className="contact form">
                 <h3>Envia un mensaje</h3>
-                <form action="https://formspree.io/f/xnqeavrz"
-                method="POST">
+                <form
+  action="https://formspree.io/f/mgegvlqq"
+  method="POST"
+>
                   <div className="formBox">
                     <div className="row50">
                       <div className="inputBox">
