@@ -32,10 +32,7 @@ const ServicesPage = () => {
             </p>
           </div>
           <div className="image">
-            <img
-              src="https://t3.ftcdn.net/jpg/02/48/42/64/360_F_248426448_NVKLywWqArG2ADUxDq6QprtIzsF82dMF.jpg"
-              alt="propImage"
-            />
+            <img src="/Escoltas.png" alt="Vigilante" />
           </div>
         </section>
         <section className="services-section" id="SM">
@@ -97,10 +94,7 @@ const ServicesPage = () => {
             </p>
           </div>
           <div className="image">
-            <img
-              src="https://t3.ftcdn.net/jpg/02/48/42/64/360_F_248426448_NVKLywWqArG2ADUxDq6QprtIzsF82dMF.jpg"
-              alt="propImage"
-            />
+            <img src="/Seguridad_fisica.png" alt="Vigilante" />
           </div>
         </section>
         <section className="benefits-section" id="ST">
@@ -135,10 +129,7 @@ const ServicesPage = () => {
             </p>
           </div>
           <div className="image">
-            <img
-              src="https://t3.ftcdn.net/jpg/02/48/42/64/360_F_248426448_NVKLywWqArG2ADUxDq6QprtIzsF82dMF.jpg"
-              alt="propImage"
-            />
+            <img src="/tech_service.webp" alt="Vigilante" />
           </div>
         </section>
         <section className="services-section" id="CM">
@@ -194,10 +185,7 @@ const ServicesPage = () => {
               de una falsa alarma o de un evento en curso.
             </p>
             <div className="image">
-              <img
-                src="https://t3.ftcdn.net/jpg/02/48/42/64/360_F_248426448_NVKLywWqArG2ADUxDq6QprtIzsF82dMF.jpg"
-                alt="propImage"
-              />
+              <img src="/Central_monitoreo.png" alt="Vigilante" />
             </div>
           </div>
         </section>
@@ -218,10 +206,7 @@ const ServicesPage = () => {
             </p>
           </div>
           <div className="image">
-            <img
-              src="https://t3.ftcdn.net/jpg/02/48/42/64/360_F_248426448_NVKLywWqArG2ADUxDq6QprtIzsF82dMF.jpg"
-              alt="propImage"
-            />
+            <img src="/vigilante.jpeg" alt="Vigilante" />
           </div>
         </section>
       </main>

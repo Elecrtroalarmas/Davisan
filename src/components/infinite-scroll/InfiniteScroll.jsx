@@ -13,10 +13,10 @@ export const InfiniteScroll = () => {
         }}
       >
         <div className="card-image">
-          <img
-            src="https://t3.ftcdn.net/jpg/02/48/42/64/360_F_248426448_NVKLywWqArG2ADUxDq6QprtIzsF82dMF.jpg"
-            alt="propImage"
-          />
+          <picture>
+            <source srcSet="/Escoltas.png" />
+            <img src="/Escoltas.png" alt="Vigilante" />
+          </picture>
         </div>
         <div className="card-content">
           <h1>Escolta</h1>
@@ -52,8 +52,8 @@ export const InfiniteScroll = () => {
       >
         <div className="card-image">
           <picture>
-            <source srcSet="/seguridadFisica.png" />
-            <img src="/seguridadFisica.png" alt="Vigilante" />
+            <source srcSet="/tech_service.webp" />
+            <img src="/tech_service.webp" alt="Vigilante" />
           </picture>
         </div>
         <div className="card-content">
@@ -71,8 +71,8 @@ export const InfiniteScroll = () => {
       >
         <div className="card-image">
           <picture>
-            <source srcSet="/plantaFisica.png" />
-            <img src="/plantaFisica.png" alt="Vigilante" />
+            <source srcSet="/Seguridad_fisica.png" />
+            <img src="/Seguridad_fisica.png" alt="Vigilante" />
           </picture>
         </div>
         <div className="card-content">
@@ -89,7 +89,7 @@ export const InfiniteScroll = () => {
         }}
       >
         <div className="card-image">
-        <picture>
+          <picture>
             <source srcSet="/seguridadMoto.png" />
             <img src="/seguridadMoto.png" alt="Vigilante" />
           </picture>
@@ -108,9 +108,9 @@ export const InfiniteScroll = () => {
         }}
       >
         <div className="card-image">
-        <picture>
-            <source srcSet="/seguridadFisica.png" />
-            <img src="/seguridadFisica.png" alt="Vigilante" />
+          <picture>
+            <source srcSet="/Central_monitoreo.png" />
+            <img src="/Central_monitoreo.png" alt="Vigilante" />
           </picture>
         </div>
         <div className="card-content">
@@ -120,7 +120,6 @@ export const InfiniteScroll = () => {
     </div>
   );
 };
-
 
 //Falta Servicio técnico y Escolta
 //Mejoramiento de imagen de central de monitoreo, planta física y supervisión motorizada
