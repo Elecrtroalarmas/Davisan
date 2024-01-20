@@ -32,10 +32,9 @@ const ServicesPage = () => {
             </p>
           </div>
           <div className="image">
-            <img
-              src="https://t3.ftcdn.net/jpg/02/48/42/64/360_F_248426448_NVKLywWqArG2ADUxDq6QprtIzsF82dMF.jpg"
-              alt="propImage"
-            />
+            <picture>
+              <img src="/Escoltas.png" alt="Vigilante" />
+            </picture>
           </div>
         </section>
         <section className="services-section" id="SM">
@@ -69,10 +68,12 @@ const ServicesPage = () => {
               diarias en los diferentes puestos.
             </p>
             <div className="image">
-              <img
-                src="https://t3.ftcdn.net/jpg/02/48/42/64/360_F_248426448_NVKLywWqArG2ADUxDq6QprtIzsF82dMF.jpg"
-                alt="propImage"
-              />
+              <picture>
+                <img
+                  src="https://t3.ftcdn.net/jpg/02/48/42/64/360_F_248426448_NVKLywWqArG2ADUxDq6QprtIzsF82dMF.jpg"
+                  alt="propImage"
+                />
+              </picture>
             </div>
           </div>
         </section>
@@ -97,10 +98,9 @@ const ServicesPage = () => {
             </p>
           </div>
           <div className="image">
-            <img
-              src="https://t3.ftcdn.net/jpg/02/48/42/64/360_F_248426448_NVKLywWqArG2ADUxDq6QprtIzsF82dMF.jpg"
-              alt="propImage"
-            />
+            <picture>
+              <img src="/Seguridad_fisica.png" alt="Vigilante" />
+            </picture>
           </div>
         </section>
         <section className="benefits-section" id="ST">
@@ -135,10 +135,9 @@ const ServicesPage = () => {
             </p>
           </div>
           <div className="image">
-            <img
-              src="https://t3.ftcdn.net/jpg/02/48/42/64/360_F_248426448_NVKLywWqArG2ADUxDq6QprtIzsF82dMF.jpg"
-              alt="propImage"
-            />
+            <picture>
+              <img src="/tech_service.webp" alt="Vigilante" />
+            </picture>
           </div>
         </section>
         <section className="services-section" id="CM">
@@ -194,10 +193,9 @@ const ServicesPage = () => {
               de una falsa alarma o de un evento en curso.
             </p>
             <div className="image">
-              <img
-                src="https://t3.ftcdn.net/jpg/02/48/42/64/360_F_248426448_NVKLywWqArG2ADUxDq6QprtIzsF82dMF.jpg"
-                alt="propImage"
-              />
+              <picture>
+                <img src="/Central_monitoreo.png" alt="Vigilante" />
+              </picture>
             </div>
           </div>
         </section>
@@ -218,10 +216,9 @@ const ServicesPage = () => {
             </p>
           </div>
           <div className="image">
-            <img
-              src="https://t3.ftcdn.net/jpg/02/48/42/64/360_F_248426448_NVKLywWqArG2ADUxDq6QprtIzsF82dMF.jpg"
-              alt="propImage"
-            />
+            <picture>
+              <img src="/vigilante.jpeg" alt="Vigilante" />
+            </picture>
           </div>
         </section>
       </main>
