@@ -54,9 +54,9 @@ const ContactUs = () => {
               <div className="contact form">
                 <h3>Envia un mensaje</h3>
                 <form
-  action="https://formspree.io/f/mgegvlqq"
-  method="POST"
->
+                  action="https://formspree.io/f/mgegvlqq"
+                  method="POST"
+                >
                   <div className="formBox">
                     <div className="row50">
                       <div className="inputBox">
@@ -126,11 +126,11 @@ const ContactUs = () => {
                       />
                     </span>
                     <a
-                      href="mailto:correo@gmail.com"
+                      href="mailto:contactenos@davisan.com.co"
                       target="_blank"
                       rel="noopener noreferrer"
                     >
-                      correo@gmail.com
+                      contactenos@davisan.com.co
                     </a>
                   </div>
 

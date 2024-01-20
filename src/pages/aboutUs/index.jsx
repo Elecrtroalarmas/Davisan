@@ -18,7 +18,10 @@ const AboutUs = () => {
             <div className="about-us-container">
               <h2>Acerca de Nosotros</h2>
               <div className="about-us-content">
-                <img src="https://davisan.com.co/img/trabajos/full/image-01-full.jpg" alt="Imagen de DAVISAN SECURITY LTDA" />
+                <picture>
+                  <source srcSet="/CentralMonitoreo.png" />
+                  <img src="/CentralMonitoreo.png" alt="Central de monitoreo" />
+                </picture>
                 <div className="text-box">
                   <p>
                     DAVISAN SECURITY LTDA es una empresa Colombiana especializada en ofrecer servicios de seguridad privada integral. 
@@ -39,9 +42,7 @@ const AboutUs = () => {
 
           <section className="mission-vision-section">
             <div className="mission-vision-container">
-              <div className="mission-vision-header">
-                <h2>Misión y Visión</h2>
-              </div>
+
 
               <div className="mission-vision-content">
                 <div className="mission">
@@ -79,9 +80,54 @@ const AboutUs = () => {
             </div>
           </section>
 
-          <section className="valores">
-            <h1>seccion de valores coorporativos</h1>
+
+
+          <section className="valores-section">
+            <div className='valorescon' id='valorescon'>
+              <div className="containerValores">
+                <h1 className='subTitulo'>Valores Coorporativos</h1>
+                <div className="valoresList">
+                  <div>
+                    <picture>
+                      <source srcSet="/trabajoEquipo.png" />
+                      <img src="/trabajoEquipo.png" alt="Trabajo En equipo" />
+                    </picture>
+                    <h2>Trabajo en equipo</h2>
+                  </div>
+                  <div>
+                    <picture>
+                      <source srcSet="/comunicacion.png" />
+                      <img src="/comunicacion.png" alt="Comunicacion" />
+                    </picture>
+                    <h2>Comunicaciones asertiva</h2>
+                  </div>
+                  <div>
+                    <picture>
+                      <source srcSet="/responsabilidad.png" />
+                      <img src="/responsabilidad.png" alt="Responsabilidad" />
+                    </picture>
+                    <h2>Responsabilidad</h2>
+                  </div>
+                  <div>
+                    <picture>
+                      <source srcSet="/servicio.png" />
+                      <img src="/servicio.png" alt="servicio" />
+                    </picture>
+                    <h2>Excelencia del servicio</h2>
+                  </div>
+                  <div>
+                    <picture>
+                      <source srcSet="/ambienteLaboral.png" />
+                      <img src="/ambienteLaboral.png" alt="ambienteLaboral" />
+                    </picture>
+                    <h2>Buen ambiente laboral</h2>
+                  </div>
+                  
+                </div>
+              </div>
+            </div>
           </section>
+
 
 
 
@@ -182,9 +228,14 @@ const AboutUs = () => {
 
           </section>
 
-          <section>
-            <h1>Seccion de organigrama</h1>
+          <section class="organigrama-section">
+            <h2 class="titulo-organigrama">Organigrama</h2>
+            <picture>
+              <source srcSet="/Oraganigrama.png" />
+              <img src="/Oraganigrama.png" alt="Organigrama" class="imagen-organigrama" />
+            </picture>
           </section>
+
         </main>
         <Footer />
         <FloatingButton />
