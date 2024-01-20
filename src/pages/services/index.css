@@ -23,6 +23,7 @@ main .infinite-scroll {
   position: relative;
   height: 100%;
   width: 100%;
+  overflow: hidden;
 }
 
 main .infinite-scroll > h1 {
@@ -31,6 +32,7 @@ main .infinite-scroll > h1 {
   color: var(--color-primary);
   margin-bottom: 1rem;
   text-transform: uppercase;
+  text-align: center;
 }
 
 main .infinite-scroll .father::before {
@@ -91,6 +93,12 @@ main .infinite-scroll .container .card .card-image picture img {
   flex-direction: row-reverse;
   margin-right: 10rem;
   text-align: right;
+}
+
+section .image picture img {
+  max-width: 500px;
+  max-height: 300px;
+  object-fit: cover;
 }
 
 @keyframes infinite-scroll {

@@ -35,6 +35,10 @@
     list-style: none;
     box-sizing: border-box;
   }
+
+  html{
+    width: 100%;
+  }
   
   body{
     font-family: 'Montserrat', sans-serif;
