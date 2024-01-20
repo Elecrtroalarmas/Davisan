@@ -231,16 +231,11 @@ main .testimonial-section .promt .person .person_info {
 
 /* END FOURTH SECTION */
 
-/* START FIFTH SECTION */
-
-main section:nth-child(5) .promt .sub_promt .options {
-  width: 100%;
+main .CTA-section .promt .options {
   display: flex;
   justify-content: center;
-  gap: 2rem;
 }
 
-/* END FIFTH SECTION */
 
 /* BEGIN: Media Query for Big Screens */
 @media screen and (max-width: 1024px) {
