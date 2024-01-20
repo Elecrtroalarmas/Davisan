@@ -75,7 +75,7 @@ class ChatComponent extends Component {
             id: '4',
             options: [
               { value: 'preguntas_frecuentes', label: 'Preguntas Frecuentes', trigger: 'preguntas_frecuentes' },
-              { value: 'trabaja_con_nosotros', label: 'Trabaja con Nosotros', trigger: 'trabaja_con_nosotros' },
+              // { value: 'trabaja_con_nosotros', label: 'Trabaja con Nosotros', trigger: 'trabaja_con_nosotros' },
               { value: 'pago_de_facturas', label: 'Pago de Facturas', trigger: 'pago_de_facturas' },
               { value: 'contactanos', label: 'Contáctanos', trigger: 'contactanos' },
             ],
@@ -112,11 +112,11 @@ class ChatComponent extends Component {
             end: true,
           },
           
-          {
-            id: 'trabaja_con_nosotros',
-            message: 'Para más información sobre trabajar con nosotros, dirígete a:',
-            trigger: 'trabaja_con_nosotros_url',
-          },
+          // {
+          //   id: 'trabaja_con_nosotros',
+          //   message: 'Para más información sobre trabajar con nosotros, dirígete a:',
+          //   trigger: 'trabaja_con_nosotros_url',
+          // },
           {
             id: 'trabaja_con_nosotros_url',
             component: (
