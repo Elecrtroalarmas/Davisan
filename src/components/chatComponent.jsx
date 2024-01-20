@@ -33,7 +33,7 @@ class ChatComponent extends Component {
 
   render() {
     const trabajaConNosotrosUrl = 'https://www.google.com/?hl=es'; 
-    const whatsappUrl = 'https://www.google.com/?hl=es'; 
+    const whatsappUrl = 'https://wa.me/573112280450'; 
     const masInformacionUrl = '/ContactUs/'; 
     const pagoDeFacturasUrl = 'https://www.google.com/?hl=es'; 
 
