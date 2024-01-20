@@ -405,6 +405,10 @@
     flex-direction: column;
     align-items: center;
   }
+
+  .valorescon{
+    padding: 0%;
+  }
 }
 
 /* Media query para pantallas aún más pequeñas */
