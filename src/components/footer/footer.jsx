@@ -16,33 +16,20 @@ function Footer() {
               <img src="/superVigilancia.png" alt="Super Vigilancia" />
             </picture>
           </div>
-          <div className="sb-footer-links-div">
-            <h4>For Business</h4>
-            <a href="/test">
-              <p>Employer</p>
-            </a>
-            <a href="/health">
-              <p>Health Plan</p>
-            </a>
-            <a href="/individual">
-              <p>Individual</p>
-            </a>
-          </div>
 
           <div className="sb-footer-links-div">
-            <h4>Resources</h4>
-            <a href="/testing">
-              <p>Financial</p>
-            </a>
-            <a href="/testing">
-              <p>Orientation</p>
-            </a>
+            <h4>Links de interes</h4>
+            <Link to="/">Pagina principal</Link>
+            <br />
+            <Link to="/aboutUs">Acarca De Nosotros</Link>
+            <br />
+            <Link to="/ContactUs">Contáctanos</Link>
+            <br />
+            <Link to="/services">Servicios</Link> 
           </div>
           <div className="sb-footer-links-div">
-            <h4>Información</h4>
-            <a href="/employers">
-              <Link to="/preguntasFre">Preguntas Frecuentes</Link>
-            </a>
+            <h4>Información</h4>    
+            <Link to="/preguntasFre">Preguntas Frecuentes</Link> 
           </div>
           <div className="sb-footer-links-div">
             <h4>Redes Sociales</h4>
@@ -65,22 +52,7 @@ function Footer() {
             <div>
               <p>Terminos y condiciones</p>
             </div>
-          </a>
-          <a href="/terms">
-            <div>
-              <p>Privacidad</p>
-            </div>
-          </a>
-          <a href="/terms">
-            <div>
-              <p>Seguridad</p>
-            </div>
-          </a>
-          <a href="/terms">
-            <div>
-              <p>Política de Cookies</p>
-            </div>
-          </a>
+          </a>   
         </div>
       </div>
     </footer>
