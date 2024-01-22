@@ -173,8 +173,8 @@ main .services-section .promt .options .n2{
 /* END THIRD SECTION */
 /* START FOURTH SECTION */
 
-main .testimonial-section .promt > .n1,
-main .testimonial-section .promt > .n2 {
+main .testimonial-section .promt .n1,
+main .testimonial-section .promt .n2 {
   position: absolute;
   background-color: white;
   height: 60px;
@@ -185,19 +185,20 @@ main .testimonial-section .promt > .n2 {
   border-radius: 50%;
   border: 1px solid black;
   cursor: pointer;
+  z-index: 3;
 }
 
-main .testimonial-section .promt > .n1 {
+main .testimonial-section .promt .n1 {
   left: 5rem;
 }
 
-main .testimonial-section .promt > .n2 {
+main .testimonial-section .promt .n2 {
   right: 5rem;
   rotate: 180deg;
 }
 
-main .testimonial-section .promt > .n1 svg,
-main .testimonial-section .promt > .n2 svg {
+main .testimonial-section .promt .n1 svg,
+main .testimonial-section .promt .n2 svg {
   width: 25px;
   height: 25px;
 }
