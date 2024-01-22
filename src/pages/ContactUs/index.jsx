@@ -1,5 +1,6 @@
 import * as React from "react";
 import { useState } from "react";
+import { Link, navigate } from "gatsby";
 import Header from "../../components/header/header";
 import Footer from "../../components/footer/footer";
 import FloatingButton from "../../components/floatingButtonComponent";
@@ -169,16 +170,15 @@ const ContactUs = () => {
                     </li>
                     <li>
                       <a
-                        href="https://twitter.com/?lang=es"
+                        href="https://wa.me/573112280450"
                         target="_blank"
                         rel="noopener noreferrer"
                       >
-                        <img
-                          width="35"
-                          height="35"
-                          src="https://img.icons8.com/ios-glyphs/35/FFFFFF/twitterx--v2.png"
-                          alt="twitterx--v2"
-                        />
+                        <img 
+                          width="35" 
+                          height="35" 
+                          src="https://img.icons8.com/ios/35/FFFFFF/whatsapp--v1.png" 
+                          alt="whatsapp--v1"/>
                       </a>
                     </li>
                     <li>

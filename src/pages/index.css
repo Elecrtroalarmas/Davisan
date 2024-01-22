@@ -1,3 +1,5 @@
+
+
 main {
   display: flex;
   flex-direction: column;
@@ -41,11 +43,24 @@ main section .promt .options {
 
 /* START FIRST SECTION */
 
-main .main-banner .promt h1 {
-  font-size: 3rem;
-  color: black;
+main .main-banner  {
+  flex: 1;
+  position: relative;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-image: url(/CentralMonitoreo.png);
 }
 
+main .main-banner .promt h1 {
+  font-size: 3rem;
+  color: whitesmoke;
+}
+
+main .main-banner .promt p {
+  color: whitesmoke;
+}
 
 main .main-banner .promt .options button:nth-child(2) {
   background-color: transparent;

@@ -3,7 +3,7 @@ import Header from "../components/header/header";
 import Footer from "../components/footer/footer";
 import Button from "../components/buttons/button";
 import { CardSwipe } from "../components/card-swiper/card-swiper";
-
+import { Link, navigate } from "gatsby";
 import { RiBox2Line } from "react-icons/ri";
 import "./root.css";
 import "./index.css";
@@ -14,6 +14,8 @@ const IndexPage = () => {
     <>
       <Header />
       <main>
+
+
         <section className="main-banner">
           <div className="promt">
             <h1>Slogan</h1>
@@ -22,11 +24,16 @@ const IndexPage = () => {
               your customers, and your employees.
             </p>
             <div className="options">
-              <Button text="Learn More" />
-              <Button text="Contact us" />
+              <Link to="/aboutUs"><Button text="Conocenos" /></Link>
+              <Link to="/ContactUs" ><Button text="Contactanos"/></Link>           
             </div>
           </div>
         </section>
+
+
+
+
+
         <hr />
         <h1>Por qué elegirnos Section</h1>
         <hr />
@@ -115,8 +122,8 @@ const IndexPage = () => {
                 our physical security solutions can protect your business.
               </p>
               <div className="options">
-                <Button text="Schedule" />
-                <Button text="Request" />
+                <Link to="/services"><Button text="Nuestros servicios" /></Link>
+                <Link to="/ContactUs" ><Button text="Contactanos"/></Link> 
               </div>
             </div>
           </div>
