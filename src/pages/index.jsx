@@ -2,10 +2,9 @@ import * as React from "react";
 import Header from "../components/header/header";
 import Footer from "../components/footer/footer";
 import Button from "../components/buttons/button";
+import { CardSwipe } from "../components/card-swiper/card-swiper";
 import { Link, navigate } from "gatsby";
 import { RiBox2Line } from "react-icons/ri";
-import { FaUser } from "react-icons/fa";
-import { FaArrowLeftLong } from "react-icons/fa6";
 import "./root.css";
 import "./index.css";
 import FloatingButton from "../components/floatingButtonComponent";
@@ -134,14 +133,8 @@ const IndexPage = () => {
         </section>
         <section className="testimonial-section">
           <div className="promt">
-            <div className="n1">
-              <FaArrowLeftLong />
-            </div>
-            <div className="n2">
-              <FaArrowLeftLong />
-            </div>
-            <div className="sub_promt">
-              <h2>Idk icon</h2>
+              <CardSwipe />
+              {/* <h2>Idk icon</h2>
               <h2>
                 Our physical security product has been a game-changer for our
                 organization. Highly recommended!
@@ -154,8 +147,7 @@ const IndexPage = () => {
                   </p>
                   <p>CEO, Company</p>
                 </div>
-              </div>
-            </div>
+              </div> */}
           </div>
         </section>
         <section className="CTA-section">
