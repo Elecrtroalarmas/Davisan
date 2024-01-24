@@ -1,4 +1,6 @@
-
+.subTitulo{
+  padding-bottom: 100px;
+}
 
 main {
   display: flex;
@@ -244,6 +246,12 @@ main .CTA-section .promt .options {
 }
 
 @media screen and (max-width: 720px) {
+
+  .subTitulo{
+    padding-top: 20px;
+    padding-bottom: 0px;
+  }
+
   main section:nth-child(n + 3) .promt .sub_promt {
     width: 90%;
   }

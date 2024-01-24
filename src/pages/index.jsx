@@ -35,7 +35,44 @@ const IndexPage = () => {
 
 
         <hr />
-        <h1>Por qué elegirnos Section</h1>
+
+
+        <section className="valores-section">
+            <div className='valorescon' id='valorescon'>
+              <div className="containerValores">
+                <h1 className='subTitulo'>Por qué elegirnos </h1>
+                <div className="valoresList">
+                  <div>
+                    <picture>
+                      <source srcSet="/calificacion.png" />
+                      <img src="/calificacion.png" alt="personal calificado" />
+                    </picture>
+                    <h2>Personal calificado</h2>
+                  </div>
+                  <div>
+                    <picture>
+                      <source srcSet="/consultoria.png" />
+                      <img src="/consultoria.png" alt="Consultoria" />
+                    </picture>
+                    <h2>Expertos en consultoría</h2>
+                  </div>
+                  <div>
+                    <picture>
+                      <source srcSet="/integracion.png" />
+                      <img src="/integracion.png" alt="integracion tecnologica" />
+                    </picture>
+                    <h2>Integración tecnológica</h2>
+                  </div>
+                  
+                  
+                </div>
+              </div>
+            </div>
+          </section>
+
+
+
+        
         <hr />
         <section className="services-section">
           <div className="promt">
