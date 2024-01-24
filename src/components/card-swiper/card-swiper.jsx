@@ -10,10 +10,10 @@ export const CardSwipe = () => {
 
   const handleSwipe = (direction) => {
     let nextIndex;
-    
-    if (direction === 'left') {
+
+    if (direction === "left") {
       nextIndex = currentIndex + 1;
-    } else if (direction === 'right') {
+    } else if (direction === "right") {
       nextIndex = currentIndex - 1;
     }
 
@@ -35,11 +35,70 @@ export const CardSwipe = () => {
           className="cards"
           style={{ transform: `translateX(-${currentIndex * 25}%)` }}
         >
-          {/* Add your card components here */}
-          <div className="card">Card 1</div>
-          <div className="card">Card 2</div>
-          <div className="card">Card 3</div>
-          <div className="card">Card 4</div>
+          <div className="card">
+            <h2>Idk Icon</h2>
+            <h3>
+              Our physical security product has been a game-changer for our
+              organization. Highly recommended!
+            </h3>
+            <div className="person">
+              <FaUser />
+              <div className="person_info">
+                <p>
+                  <strong>John Doe</strong>
+                </p>
+                <p>CEO, Company</p>
+              </div>
+            </div>
+          </div>
+          <div className="card">
+            <h2>Idk Icon</h2>
+            <h3>
+              Our physical security product has been a game-changer for our
+              organization. Highly recommended!
+            </h3>
+            <div className="person">
+              <FaUser />
+              <div className="person_info">
+                <p>
+                  <strong>John Doe</strong>
+                </p>
+                <p>CEO, Company</p>
+              </div>
+            </div>
+          </div>
+          <div className="card">
+            <h2>Idk Icon</h2>
+            <h3>
+              Our physical security product has been a game-changer for our
+              organization. Highly recommended!
+            </h3>
+            <div className="person">
+              <FaUser />
+              <div className="person_info">
+                <p>
+                  <strong>John Doe</strong>
+                </p>
+                <p>CEO, Company</p>
+              </div>
+            </div>
+          </div>
+          <div className="card">
+            <h2>Idk Icon</h2>
+            <h3>
+              Our physical security product has been a game-changer for our
+              organization. Highly recommended!
+            </h3>
+            <div className="person">
+              <FaUser />
+              <div className="person_info">
+                <p>
+                  <strong>John Doe</strong>
+                </p>
+                <p>CEO, Company</p>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </>

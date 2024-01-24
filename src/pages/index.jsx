@@ -97,20 +97,6 @@ const IndexPage = () => {
         <section className="testimonial-section">
           <div className="promt">
               <CardSwipe />
-              {/* <h2>Idk icon</h2>
-              <h2>
-                Our physical security product has been a game-changer for our
-                organization. Highly recommended!
-              </h2>
-              <div className="person">
-                <FaUser />
-                <div className="person_info">
-                  <p>
-                    <strong>John Doe</strong>
-                  </p>
-                  <p>CEO, Company</p>
-                </div>
-              </div> */}
           </div>
         </section>
         <section className="CTA-section">

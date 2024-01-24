@@ -218,33 +218,6 @@ main .testimonial-section .promt .n2 svg {
   height: 25px;
 }
 
-main .testimonial-section .promt .person {
-  padding: 0 2rem;
-  flex: 1;
-  text-align: center;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  gap: 1rem;
-}
-
-main .testimonial-section .promt .person svg {
-  width: 70px;
-  height: 70px;
-  background-color: white;
-  padding: 1rem;
-  border-radius: 50%;
-}
-
-main .testimonial-section .promt .person .person_info {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  gap: 0.5rem;
-}
-
 /* END FOURTH SECTION */
 
 main .CTA-section .promt .options {
