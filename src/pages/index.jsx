@@ -69,11 +69,6 @@ const IndexPage = () => {
               </div>
             </div>
           </section>
-
-
-
-        
-        <hr />
         <section className="services-section">
           <div className="promt">
             <div className="sub_promt">
@@ -134,21 +129,6 @@ const IndexPage = () => {
         <section className="testimonial-section">
           <div className="promt">
               <CardSwipe />
-          </div>
-        </section>
-        <section className="CTA-section">
-          <div className="promt">
-            <div className="sub_promt">
-              <h1>Unlock Your Security Potential</h1>
-              <p>
-                Schedule a consultation or request more information to learn how
-                our physical security solutions can protect your business.
-              </p>
-              <div className="options">
-                <Link to="/services"><Button text="Nuestros servicios" /></Link>
-                <Link to="/ContactUs" ><Button text="Contactanos"/></Link> 
-              </div>
-            </div>
           </div>
         </section>
       </main>
