@@ -24,6 +24,7 @@ export const CardSwipe = () => {
 
   return (
     <>
+    <h1>Nuestros Clientes</h1>
       <button className="n1" onClick={() => handleSwipe("right")}>
         <FaArrowLeftLong />
       </button>
@@ -38,7 +39,6 @@ export const CardSwipe = () => {
           }}
         >
           <div className="card">
-            <h2>Idk Icon</h2>
             <h3>
               Our physical security product has been a game-changer for our
               organization. Highly recommended!
@@ -52,7 +52,6 @@ export const CardSwipe = () => {
             </div>
           </div>
           <div className="card">
-            <h2>Idk Icon</h2>
             <h3>
               Our physical security product has been a game-changer for our
               organization. Highly recommended!
@@ -71,7 +70,6 @@ export const CardSwipe = () => {
             </div>
           </div>
           <div className="card">
-            <h2>Idk Icon</h2>
             <h3>
               Our physical security product has been a game-changer for our
               organization. Highly recommended!
@@ -90,7 +88,6 @@ export const CardSwipe = () => {
             </div>
           </div>
           <div className="card">
-            <h2>Idk Icon</h2>
             <h3>
               Our physical security product has been a game-changer for our
               organization. Highly recommended!
@@ -109,7 +106,6 @@ export const CardSwipe = () => {
             </div>
           </div>
           <div className="card">
-            <h2>Idk Icon</h2>
             <h3>
               Our physical security product has been a game-changer for our
               organization. Highly recommended!
@@ -128,7 +124,6 @@ export const CardSwipe = () => {
             </div>
           </div>
           <div className="card">
-            <h2>Idk Icon</h2>
             <h3>
               Our physical security product has been a game-changer for our
               organization. Highly recommended!
@@ -147,7 +142,6 @@ export const CardSwipe = () => {
             </div>
           </div>
           <div className="card">
-            <h2>Idk Icon</h2>
             <h3>
               Our physical security product has been a game-changer for our
               organization. Highly recommended!
