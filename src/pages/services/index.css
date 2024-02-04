@@ -86,6 +86,8 @@ main .infinite-scroll .container .card .card-image picture img {
   max-width: 500px;
   max-height: 300px;
   object-fit: cover;
+  border-radius: var(--sm-border);
+  cursor: pointer;
 }
 
 .inverse {
@@ -101,6 +103,7 @@ section .image picture img {
   max-width: 600px;
   max-height: 300px;
   object-fit: cover;
+  border-radius: var(--sm-border);
 }
 
 @keyframes infinite-scroll {

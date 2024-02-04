@@ -90,8 +90,8 @@ export const InfiniteScroll = () => {
       >
         <div className="card-image">
           <picture>
-            <source srcSet="/seguridadMoto.png" />
-            <img src="/seguridadMoto.png" alt="Vigilante" />
+            <source srcSet="/seguridad_motorizada.JPG" />
+            <img src="/seguridad_motorizada.JPG" alt="Vigilante" />
           </picture>
         </div>
         <div className="card-content">

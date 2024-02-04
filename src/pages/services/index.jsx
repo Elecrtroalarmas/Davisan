@@ -69,10 +69,8 @@ const ServicesPage = () => {
             </p>
             <div className="image">
               <picture>
-                <img
-                  src="https://t3.ftcdn.net/jpg/02/48/42/64/360_F_248426448_NVKLywWqArG2ADUxDq6QprtIzsF82dMF.jpg"
-                  alt="propImage"
-                />
+                <source srcSet="/seguridad_motorizada.JPG" />
+                <img src="/seguridad_motorizada.JPG" alt="Vigilante" />
               </picture>
             </div>
           </div>
