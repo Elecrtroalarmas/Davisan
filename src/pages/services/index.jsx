@@ -4,6 +4,7 @@ import Footer from "../../components/footer/footer";
 import FloatingButton from "../../components/floatingButtonComponent";
 import { IoCloudOffline, IoCloudDone } from "react-icons/io5";
 import { InfiniteScroll } from "../../components/infinite-scroll/InfiniteScroll";
+import FloatingButtonPse from "../../components/floatingButtonPseComponent"
 import "./index.css";
 
 const ServicesPage = () => {
@@ -221,6 +222,7 @@ const ServicesPage = () => {
         </section>
       </main>
       <Footer />
+      <FloatingButtonPse />
       <FloatingButton />
     </>
   );

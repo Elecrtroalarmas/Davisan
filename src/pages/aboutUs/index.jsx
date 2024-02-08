@@ -4,6 +4,9 @@ import * as React from "react";
 import Header from "../../components/header/header";
 import Footer from "../../components/footer/footer";
 import FloatingButton from "../../components/floatingButtonComponent";
+import FloatingButtonPse from "../../components/floatingButtonPseComponent"
+
+
 import "./index.css";
 
 
@@ -238,7 +241,8 @@ const AboutUs = () => {
 
         </main>
         <Footer />
-        <FloatingButton />
+        <FloatingButtonPse />
+        <FloatingButton />       
       </>
     );
   };

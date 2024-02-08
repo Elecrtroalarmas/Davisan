@@ -8,6 +8,7 @@ import { RiBox2Line } from "react-icons/ri";
 import "./root.css";
 import "./index.css";
 import FloatingButton from "../components/floatingButtonComponent";
+import FloatingButtonPse from "../components/floatingButtonPseComponent";
 
 const IndexPage = () => {
   return (
@@ -18,7 +19,7 @@ const IndexPage = () => {
 
         <section className="main-banner">
           <div className="promt">
-            <h1>Slogan</h1>
+            <h1>Tu seguridad nuestra prioridad</h1>
             <p>
               Our solutions are designed to help you to protect your business,
               your customers, and your employees.
@@ -133,6 +134,7 @@ const IndexPage = () => {
         </section>
       </main>
       <Footer />
+      <FloatingButtonPse />
       <FloatingButton />
     </>
   );

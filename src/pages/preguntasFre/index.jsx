@@ -2,6 +2,7 @@ import * as React from "react";
 import Header from "../../components/header/header";
 import Footer from "../../components/footer/footer";
 import FloatingButton from "../../components/floatingButtonComponent";
+import FloatingButtonPse from "../../components/floatingButtonPseComponent"
 import "./index.css";
 
 const preguntasFre = () => {
@@ -42,7 +43,9 @@ const preguntasFre = () => {
                           puedes dirigirte al siguiente link:
                           <br />
                           <br />
-                          Link
+                          <a target="blank" href="https://www.mipagoamigo.com/MPA_WebSite/ServicePayments/StartPayment?id=3967&searchedCategoryId=&searchedAgreementName=DAVISAN%20LTDA">
+                            Pago amigo Davisan
+                          </a>
                         </p>
                     </div>
                 </label>
@@ -89,6 +92,7 @@ const preguntasFre = () => {
         </section>
       </main>
       <Footer />
+      <FloatingButtonPse />
       <FloatingButton />
     </>
   );
