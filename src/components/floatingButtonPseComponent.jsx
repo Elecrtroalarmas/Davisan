@@ -12,7 +12,7 @@ class FloatingButtonPse extends Component {
           <button className="floating-buttonpse"></button>
         </a>
         <a
-          href="https://www.mipagoamigo.com/MPA_WebSite/ServicePayments/StartPayment?id=3967&searchedCategoryId=&searchedAgreementName=DAVISAN%20LTDA"
+          href="https://wa.me/573102581814"
           target="_blank"
         >
           <button className="floating-buttonpse-wpp"></button>
