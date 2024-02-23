@@ -12,7 +12,7 @@ class FloatingButtonPse extends Component {
           <button className="floating-buttonpse"></button>
         </a>
         <a
-          href="https://wa.me/573102581814"
+          href="https://wa.me/573112280450"
           target="_blank"
         >
           <button className="floating-buttonpse-wpp"></button>
