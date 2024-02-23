@@ -38,7 +38,7 @@ export const InfiniteScroll = () => {
           </picture>
         </div>
         <div className="card-content">
-          <h1>Vigilancia Física</h1>
+          <h1>Vigilancia Fija</h1>
         </div>
       </div>
       <div
