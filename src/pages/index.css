@@ -41,6 +41,7 @@ main section .promt .options {
   justify-content: flex-start;
   width: 100%;
   gap: 2rem;
+  margin-top: 2rem;
 }
 
 /* START FIRST SECTION */
@@ -157,24 +158,31 @@ main .CTA-section .promt  p{
   color: black;
 }
 
+
 main .services-section .promt .elements {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
   gap: 4rem;
+  margin-top: 2rem;
 }
 
 main .services-section .promt .elements .item {
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
+  /* justify-content: center; */
   flex: 1;
 }
 
 main .services-section .promt .elements .item svg {
   width: 60px;
   height: 60px;
+}
+
+main .services-section .promt .elements .item h1,
+main .services-section .promt .elements .item p{
+  margin-top: 2rem;
 }
 
 main .services-section .promt .options {
