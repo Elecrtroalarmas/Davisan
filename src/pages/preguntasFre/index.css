@@ -39,6 +39,10 @@
     color: #333;
 }
 
+.containerfaq .second-title{
+    margin-top: 2rem;
+}
+
 .containerfaq .tab{
     position: relative;
     background-color: #fff;
