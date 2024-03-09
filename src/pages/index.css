@@ -185,6 +185,14 @@ main .services-section .promt .options {
 main .services-section .promt .options .n1,
 main .services-section .promt .options .n2{
   flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  border-radius: var(--sm-border);
+  gap: 1rem;
+  padding: 1rem;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
 }
 
 /* END THIRD SECTION */

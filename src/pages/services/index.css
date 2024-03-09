@@ -82,12 +82,28 @@ main .infinite-scroll .container .card {
   margin: 0 5rem;
 }
 
-main .infinite-scroll .container .card .card-image picture img {
-  max-width: 500px;
-  max-height: 300px;
-  object-fit: cover;
+main .infinite-scroll .container .card .card-image picture {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 350px;
+  width: 500px;
   border-radius: var(--sm-border);
+  overflow: hidden;
+  margin-bottom: 2rem;
   cursor: pointer;
+}
+
+main .infinite-scroll .container .card .card-image picture img {
+  object-fit: cover;
+  cursor: pointer;
+  width: inherit;
+  height: inherit;
+}
+
+main .infinite-scroll .container .card:hover picture img {
+  transform: scale(1.2);
+  transition: transform 0.3s;
 }
 
 .inverse {
@@ -97,12 +113,19 @@ main .infinite-scroll .container .card .card-image picture img {
   text-align: right;
 }
 
+section .image picture {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 500px;
+  width: 800px;
+  overflow: hidden;
+}
+
 section .image picture img {
-  width: 100%;
-  min-width: 375px;
-  max-width: 600px;
-  max-height: 300px;
   object-fit: cover;
+  width: inherit;
+  height: inherit;
   border-radius: var(--sm-border);
 }
 
