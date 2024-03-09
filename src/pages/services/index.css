@@ -122,6 +122,7 @@ section .image picture {
   overflow: hidden;
 }
 
+
 section .image picture img {
   object-fit: cover;
   width: inherit;

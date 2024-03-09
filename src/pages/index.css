@@ -203,6 +203,13 @@ main .services-section .promt .options .n2{
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
 }
 
+main .services-section .promt .options .n1:hover,
+main .services-section .promt .options .n2:hover{
+  background-color: #cf454593;
+  transition: .5s;
+  color: white;
+}
+
 /* END THIRD SECTION */
 /* START FOURTH SECTION */
 
