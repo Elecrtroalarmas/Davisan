@@ -28,7 +28,10 @@ export default function Header() {
           <source srcSet="/icon.png" />
           <img src="/icon.png" alt="logo" className="logo" />
         </picture>
-        <h1>Davisan</h1>
+        <picture>
+          <source srcSet="/nombreDavisan.png" />
+          <img src="/nombre.png" alt="logo" className="logoname" />
+        </picture>
       </div>
       <nav ref={navRef}>
         <ul>
