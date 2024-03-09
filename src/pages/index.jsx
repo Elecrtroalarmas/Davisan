@@ -69,17 +69,18 @@ const IndexPage = () => {
         <section className="services-section">
           <div className="promt">
             <div className="sub_promt">
-              <p>Protegemos lo que verdaderamente importa</p>
               <h1>Más de una Década de Excelencia protegiendo</h1>
-              <p>
-                Somos una empresa con una experiencia de 10 años en el mercado,
-                Comercial, Residencial. Con un grupo de clientes superior a los
-                329 abonados en Monitoreo de alarma para sus instalaciones.
-              </p>
+              <p>Protegemos lo que verdaderamente importa</p>        
+
             </div>
             <div className="elements">
               <div className="item">
-                <RiBox2Line />
+                <img  
+                  width="64" 
+                  height="64" 
+                  src="https://img.icons8.com/ios/64/security-guard.png" 
+                  alt="security-guard"
+                />
 
                 <h1>Vigilancia Humana Profesional</h1>
                 <p>
@@ -89,33 +90,46 @@ const IndexPage = () => {
                 </p>
               </div>
               <div className="item">
-                <RiBox2Line />
+                <img 
+                  width="64" 
+                  height="64" 
+                  src="https://img.icons8.com/pastel-glyph/64/private-wall-mount-camera.png" 
+                  alt="private-wall-mount-camera"
+                />
 
                 <h1>Monitoreo Avanzado de Alarmas</h1>
                 <p>
-                  Más de 329 clientes confían en nuestro servicio de monitoreo
-                  de alarmas para proteger sus propiedades. Con 10 años de
-                  experiencia, prometemos una respuesta rápida y efectiva las 24
-                  horas del día.
+                  Más de 329 abonados confían en nuestro servicio de monitoreo
+                  de alarmas para proteger sus propiedades. 
                 </p>
               </div>
               <div className="item">
-                <RiBox2Line />
+                <img 
+                  width="64" 
+                  height="64" 
+                  src="https://img.icons8.com/glyph-neue/64/clock--v1.png" 
+                  alt="clock--v1"
+                />
 
-                <h1>Servicios de Consultoría en Seguridad Integral</h1>
+                <h1>Cuenta con nuestra trayectoria</h1>
                 <p>
-                  Nuestro equipo de seguridad ofrece consultoría para negocios y
-                  hogares. Nos enfocamos en tus necesidades para proteger tus
-                  activos más importantes.
+                  Con más de 10 años de experiencia, prometemos una respuesta rápida y 
+                  efectiva las 24 horas del día.
                 </p>
               </div>
             </div>
             <div className="options">
-              <div className="n1">
-                <Button text="Learn More" />
-              </div>
               <div className="n2">
-                <Button text="Learn More" />
+                <Link
+                  to="/aboutUs"
+                  className="active"
+                  style={{
+                    color: 'white',
+                    textDecoration: 'none',
+                  }}
+                >
+                  <Button text="Leer más" /> 
+                </Link>
               </div>
             </div>
           </div>

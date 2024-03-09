@@ -145,7 +145,7 @@
 
 .valorescon{
   padding: 80px;
-  padding-bottom: 4%;
+  padding-bottom: 0px;
 }
 
 .valoresList{
@@ -409,6 +409,7 @@
 
   .valorescon{
     padding: 0%;
+    padding-bottom: 2rem;
   }
 }
 

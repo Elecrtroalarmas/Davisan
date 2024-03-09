@@ -40,8 +40,7 @@ export const CardSwipe = () => {
         >
           <div className="card">
             <h3>
-              Our physical security product has been a game-changer for our
-              organization. Highly recommended!
+              Camara de comercio de Sogamoso
             </h3>
             <div className="person">
               <picture>
@@ -53,8 +52,7 @@ export const CardSwipe = () => {
           </div>
           <div className="card">
             <h3>
-              Our physical security product has been a game-changer for our
-              organization. Highly recommended!
+              Terminal de Transporte de Sogamoso
             </h3>
             <div className="person">
               <picture>
@@ -62,17 +60,16 @@ export const CardSwipe = () => {
                 <img src="/clientes/terminal_sogamoso.jpg" alt="person" />
               </picture>
               <div className="person_info">
-                <p>
+                {/* <p>
                   <strong>John Doe</strong>
                 </p>
-                <p>CEO, Company</p>
+                <p>CEO, Company</p> */}
               </div>
             </div>
           </div>
           <div className="card">
             <h3>
-              Our physical security product has been a game-changer for our
-              organization. Highly recommended!
+              Universidad Santo Tomas Tunja
             </h3>
             <div className="person">
               <picture id="santoto">
@@ -80,17 +77,16 @@ export const CardSwipe = () => {
                 <img src="/clientes/santoto.png" alt="person" />
               </picture>
               <div className="person_info">
-                <p>
+                {/* <p>
                   <strong>John Doe</strong>
                 </p>
-                <p>CEO, Company</p>
+                <p>CEO, Company</p> */}
               </div>
             </div>
           </div>
           <div className="card">
             <h3>
-              Our physical security product has been a game-changer for our
-              organization. Highly recommended!
+              Famedic sogamoso
             </h3>
             <div className="person">
               <picture id="santoto">
@@ -98,17 +94,16 @@ export const CardSwipe = () => {
                 <img src="/clientes/famedic.jpg" alt="person" />
               </picture>
               <div className="person_info">
-                <p>
+                {/* <p>
                   <strong>John Doe</strong>
                 </p>
-                <p>CEO, Company</p>
+                <p>CEO, Company</p> */}
               </div>
             </div>
           </div>
           <div className="card">
             <h3>
-              Our physical security product has been a game-changer for our
-              organization. Highly recommended!
+              Centro medico Egeiro S.A.S
             </h3>
             <div className="person">
               <picture id="santoto">
@@ -116,17 +111,16 @@ export const CardSwipe = () => {
                 <img src="/clientes/egeiro.png" alt="person" />
               </picture>
               <div className="person_info">
-                <p>
+                {/* <p>
                   <strong>John Doe</strong>
                 </p>
-                <p>CEO, Company</p>
+                <p>CEO, Company</p> */}
               </div>
             </div>
           </div>
           <div className="card">
             <h3>
-              Our physical security product has been a game-changer for our
-              organization. Highly recommended!
+              Coomproriente
             </h3>
             <div className="person">
               <picture id="santoto">
@@ -134,17 +128,16 @@ export const CardSwipe = () => {
                 <img src="/clientes/coomproriente.png" alt="person" />
               </picture>
               <div className="person_info">
-                <p>
+                {/* <p>
                   <strong>John Doe</strong>
                 </p>
-                <p>CEO, Company</p>
+                <p>CEO, Company</p> */}
               </div>
             </div>
           </div>
           <div className="card">
             <h3>
-              Our physical security product has been a game-changer for our
-              organization. Highly recommended!
+              Ciudadela chincá
             </h3>
             <div className="person">
               <picture id="santoto">
@@ -152,10 +145,10 @@ export const CardSwipe = () => {
                 <img src="/clientes/chinca.png" alt="person" />
               </picture>
               <div className="person_info">
-                <p>
+                {/* <p>
                   <strong>John Doe</strong>
                 </p>
-                <p>CEO, Company</p>
+                <p>CEO, Company</p> */}
               </div>
             </div>
           </div>

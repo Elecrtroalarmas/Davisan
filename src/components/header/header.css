@@ -87,6 +87,10 @@ header .nav-btn{
         height: 80%;
     }
 
+    nav > ul > li > a {
+        color: white;
+    }
+
     header > nav{
         position: fixed;
         top: 0;
