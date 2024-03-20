@@ -26,6 +26,16 @@ header .logo{
     height: 100%;
     cursor: pointer;
 }
+header .logoname{
+    float: left;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    height: 100%;
+    cursor: pointer;
+    width: 10rem;
+}
 
 nav > ul{
     float: right;
