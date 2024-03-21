@@ -1,4 +1,4 @@
-.subTitulo{
+.subTitulo {
   padding-bottom: 100px;
 }
 
@@ -17,20 +17,12 @@ main section {
   display: flex;
 }
 
-main .main-banner {
-  background-image: url("https://t3.ftcdn.net/jpg/02/48/42/64/360_F_248426448_NVKLywWqArG2ADUxDq6QprtIzsF82dMF.jpg");
-  background-repeat: no-repeat;
-  background-size: contain;
-  background-position: center;
-}
-
 main section .promt {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   padding-left: 4rem;
-  min-height: 700px;
   width: 40%;
   gap: 2rem;
 }
@@ -46,7 +38,7 @@ main section .promt .options {
 
 /* START FIRST SECTION */
 
-main .main-banner  {
+main .main-banner {
   flex: 1;
   position: relative;
   background-attachment: fixed;
@@ -129,7 +121,7 @@ main .benefits-section .image img {
 
 main .services-section .promt,
 main .testimonial-section .promt,
-main .CTA-section .promt{
+main .CTA-section .promt {
   padding: 0 2rem;
   flex: 1;
   text-align: center;
@@ -137,7 +129,7 @@ main .CTA-section .promt{
 
 main .services-section .promt .sub_promt,
 main .testimonial-section .promt .sub_promt,
-main .CTA-section .promt .sub_promt{
+main .CTA-section .promt .sub_promt {
   width: 50%;
   display: flex;
   flex-direction: column;
@@ -153,11 +145,10 @@ main .CTA-section .promt h1 {
 
 main .services-section .promt p,
 main .testimonial-section .promt p,
-main .CTA-section .promt  p{
+main .CTA-section .promt p {
   font-size: 1rem;
   color: black;
 }
-
 
 main .services-section .promt .elements {
   display: flex;
@@ -171,7 +162,6 @@ main .services-section .promt .elements .item {
   display: flex;
   flex-direction: column;
   align-items: center;
-  /* justify-content: center; */
   flex: 1;
 }
 
@@ -181,7 +171,7 @@ main .services-section .promt .elements .item svg {
 }
 
 main .services-section .promt .elements .item h1,
-main .services-section .promt .elements .item p{
+main .services-section .promt .elements .item p {
   margin-top: 2rem;
 }
 
@@ -191,7 +181,7 @@ main .services-section .promt .options {
 }
 
 main .services-section .promt .options .n1,
-main .services-section .promt .options .n2{
+main .services-section .promt .options .n2 {
   flex: 1;
   display: flex;
   align-items: center;
@@ -204,9 +194,9 @@ main .services-section .promt .options .n2{
 }
 
 main .services-section .promt .options .n1:hover,
-main .services-section .promt .options .n2:hover{
+main .services-section .promt .options .n2:hover {
   background-color: #cf454593;
-  transition: .5s;
+  transition: 0.5s;
   color: white;
 }
 
@@ -250,7 +240,6 @@ main .CTA-section .promt .options {
   justify-content: center;
 }
 
-
 /* BEGIN: Media Query for Big Screens */
 @media screen and (max-width: 1024px) {
   main section .promt {
@@ -265,12 +254,15 @@ main .CTA-section .promt .options {
 
   main .benefits-section {
     flex-direction: column;
+    gap: 2rem;
+  }
+  main section {
+    margin: 2rem 0 !important;
   }
 }
 
 @media screen and (max-width: 720px) {
-
-  .subTitulo{
+  .subTitulo {
     padding-top: 20px;
     padding-bottom: 0px;
   }
@@ -303,5 +295,12 @@ main .CTA-section .promt .options {
     display: flex;
     flex-wrap: wrap;
   }
+
+  h1 {
+    font-size: 2rem !important;
+  }
+
+  h2 {
+    font-size: 1.5rem !important;
+  }
 }
-/* END: Media Query for Big Screens */

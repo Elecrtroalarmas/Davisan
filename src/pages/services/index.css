@@ -117,13 +117,16 @@ section .image picture {
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 500px;
-  width: 800px;
+  max-height: 500px;
+  max-width: 800px;
+  width: 100%;
+  border-radius: var(--sm-border);
   overflow: hidden;
 }
 
-
 section .image picture img {
+  min-width: 350px;
+  min-height: 200px;
   object-fit: cover;
   width: inherit;
   height: inherit;
@@ -142,5 +145,24 @@ section .image picture img {
 @media screen and (max-width: 1024px) {
   .inverse {
     margin-right: 0;
+  }
+}
+
+@media screen and (max-width: 720px) {
+  main .title {
+    padding-left: 0;
+  }
+  main .infinite-scroll .container .card .card-image picture {
+    height: 300px;
+  }
+  main .infinite-scroll .container .card .card-image picture img {
+    min-width: 200px;
+    min-height: 150px;
+  }
+  main .infinite-scroll .father::before {
+    width: 3rem;
+  }
+  main .infinite-scroll .father::after {
+    width: 3rem;
   }
 }
