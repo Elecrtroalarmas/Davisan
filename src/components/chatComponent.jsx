@@ -35,7 +35,7 @@ class ChatComponent extends Component {
     const trabajaConNosotrosUrl = 'https://www.google.com/?hl=es'; 
     const whatsappUrl = 'https://wa.me/573112280450'; 
     const masInformacionUrl = '/ContactUs/'; 
-    const pagoDeFacturasUrl = 'https://www.google.com/?hl=es'; 
+    const pagoDeFacturasUrl = 'https://www.mipagoamigo.com/MPA_WebSite/ServicePayments/StartPayment?id=3967&searchedCategoryId=&searchedAgreementName=DAVISAN%20LTDA'; 
 
     return (
       <ThemeProvider theme={chatTheme}>
