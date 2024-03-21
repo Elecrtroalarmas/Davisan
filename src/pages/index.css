@@ -51,10 +51,12 @@ main .main-banner {
 main .main-banner .promt h1 {
   font-size: 3rem;
   color: whitesmoke;
+  margin-top: 15%;
 }
 
 main .main-banner .promt p {
   color: whitesmoke;
+  margin-top: 20%;
 }
 
 main .main-banner .promt .options button:nth-child(2) {
@@ -257,11 +259,30 @@ main .CTA-section .promt .options {
     gap: 2rem;
   }
   main section {
-    margin: 2rem 0 !important;
+    margin-bottom: 4rem !important;
   }
 }
 
 @media screen and (max-width: 720px) {
+
+  main .main-banner {
+    background-attachment: scroll;
+    background-size: auto;
+    
+  }
+
+  
+  main .main-banner .promt p {
+    color: whitesmoke;
+    margin-top: 20%;
+  }
+
+  main .main-banner .promt h1 {
+    font-size: 3rem;
+    color: whitesmoke;
+    margin-top: 15%;
+  }
+
   .subTitulo {
     padding-top: 20px;
     padding-bottom: 0px;
