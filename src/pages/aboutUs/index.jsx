@@ -234,8 +234,8 @@ const AboutUs = () => {
           <section class="organigrama-section">
             <h2 class="titulo-organigrama">Organigrama</h2>
             <picture>
-              <source srcSet="/Oraganigrama.png" />
-              <img src="/Oraganigrama.png" alt="Organigrama" class="imagen-organigrama" />
+              <source srcSet="/Organigrama.png" />
+              <img src="/Organigrama.png" alt="Organigrama" class="imagen-organigrama" />
             </picture>
           </section>
 
