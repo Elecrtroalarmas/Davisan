@@ -76,9 +76,116 @@
   font-size: 16px;
 }
 
+/* seccion mision vision */
+
+.mission-vision-section {
+  padding-right: 4%;
+  padding-left: 4%;
+  padding-top: 4%;
+}
+
+.mission-vision-container img{
+  width: 80%;
+  padding-left: 20%;
+}
+
+.mission-vision-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.mission-vision-header {
+  margin-bottom: 5%;
+}
+
+.mission-vision-header h2 {
+  font-size: 35px;
+  margin-bottom: 7%;
+  padding-bottom: 15px;
+}
+
+.mission-vision-content {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.mission, .vision {
+  width: 48%;
+}
 
 
+.mission h3,
+.vision h3 {
+  color: #333;
+  margin-bottom: 2%;
+  font-size: 30px;
+}
 
+.mission p,
+.vision p {
+  line-height: 1.8;
+  font-size: 18px;
+}
+
+/*secion valores  coorporativos*/
+
+.valores-section{
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  /* align-items: center; */
+}
+
+.valores-section h1{
+  font-size: 35px;
+  margin-bottom: 7%;
+}
+
+.valorescon{
+  padding: 80px;
+  padding-bottom: 0px;
+}
+
+.valoresList{
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(333px, 1fr));
+  grid-gap: 40px;
+  margin-top: 50px;
+}
+
+.valoresList div{
+  background-color: whitesmoke;
+  padding: 40px;
+  font-size: 13px;
+  font-weight: 300;
+  border-right: 10px;
+  border-radius: 10px;
+  transition: background 0.5s, transform 0.5s;
+  text-align: center;
+}
+
+.valoresList div i{
+  font-size: 50px;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.valoresLists div h2{
+  font-size: 30px;
+  font-weight: 500;
+  margin-bottom: 15px;
+  text-align: center;
+}
+
+.valoresList div:hover{
+  background-color: #cf454593;
+  transform:  translateY(-10px);
+}
+
+
+/* seccion liniea de tiempo */
 .timeline{
   position: relative;
   max-width: 1200px;
@@ -217,6 +324,26 @@
 
 
 
+/* Seccion organigrama */
+
+.organigrama-section {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 4%;
+}
+
+.titulo-organigrama {
+  font-size: 35px;
+  margin-bottom: 4%;
+}
+
+.imagen-organigrama {
+  width: 100%;
+  max-width: 1000px;
+}
+
 /* Responsive */
 
 @media screen and (max-width: 600px){
@@ -257,4 +384,68 @@
     left: -15px;
   }
 
+
+}
+
+
+@media only screen and (max-width: 768px) {
+  .text-box {
+    flex: 1;
+    text-align: center;
+    margin: 0;
+  }
+
+  .about-us-content img {
+    max-width: 100%; 
+  }
+
+  .valores-section{
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 30px;
+  }
+
+  .valorescon{
+    padding: 0%;
+    padding-bottom: 2rem;
+  }
+}
+
+/* Media query para pantallas aún más pequeñas */
+@media only screen and (max-width: 480px) {
+  .text-box {
+    padding: 4% 4.5%; 
+  }
+
+  .about-us-container h2 {
+    font-size: 32px; 
+  }
+
+  .text-box p {
+    font-size: 16px; 
+    text-align: justify;
+  }
+
+  .arrow {
+    margin-top: 0; 
+  }
+
+  .more-info {
+    margin-top: 10px;
+    font-size: 14px; 
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .titulo-organigrama {
+    font-size: 28px; 
+    margin-bottom: 2%; 
+  }
+
+  .imagen-organigrama {
+    margin-top: 15%;
+    max-width: 100%; 
+  }
 }

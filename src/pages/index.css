@@ -1,3 +1,7 @@
+.subTitulo {
+  padding-bottom: 100px;
+}
+
 main {
   display: flex;
   flex-direction: column;
@@ -13,20 +17,12 @@ main section {
   display: flex;
 }
 
-main .main-banner {
-  background-image: url("https://t3.ftcdn.net/jpg/02/48/42/64/360_F_248426448_NVKLywWqArG2ADUxDq6QprtIzsF82dMF.jpg");
-  background-repeat: no-repeat;
-  background-size: contain;
-  background-position: center;
-}
-
 main section .promt {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   padding-left: 4rem;
-  min-height: 700px;
   width: 40%;
   gap: 2rem;
 }
@@ -37,15 +33,31 @@ main section .promt .options {
   justify-content: flex-start;
   width: 100%;
   gap: 2rem;
+  margin-top: 2rem;
 }
 
 /* START FIRST SECTION */
 
-main .main-banner .promt h1 {
-  font-size: 3rem;
-  color: black;
+main .main-banner {
+  flex: 1;
+  position: relative;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-image: url(/CentralMonitoreo.png);
 }
 
+main .main-banner .promt h1 {
+  font-size: 3rem;
+  color: whitesmoke;
+  margin-top: 15%;
+}
+
+main .main-banner .promt p {
+  color: whitesmoke;
+  margin-top: 20%;
+}
 
 main .main-banner .promt .options button:nth-child(2) {
   background-color: transparent;
@@ -111,7 +123,7 @@ main .benefits-section .image img {
 
 main .services-section .promt,
 main .testimonial-section .promt,
-main .CTA-section .promt{
+main .CTA-section .promt {
   padding: 0 2rem;
   flex: 1;
   text-align: center;
@@ -119,7 +131,7 @@ main .CTA-section .promt{
 
 main .services-section .promt .sub_promt,
 main .testimonial-section .promt .sub_promt,
-main .CTA-section .promt .sub_promt{
+main .CTA-section .promt .sub_promt {
   width: 50%;
   display: flex;
   flex-direction: column;
@@ -135,7 +147,7 @@ main .CTA-section .promt h1 {
 
 main .services-section .promt p,
 main .testimonial-section .promt p,
-main .CTA-section .promt  p{
+main .CTA-section .promt p {
   font-size: 1rem;
   color: black;
 }
@@ -145,13 +157,13 @@ main .services-section .promt .elements {
   flex-wrap: wrap;
   justify-content: space-around;
   gap: 4rem;
+  margin-top: 2rem;
 }
 
 main .services-section .promt .elements .item {
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
   flex: 1;
 }
 
@@ -160,21 +172,41 @@ main .services-section .promt .elements .item svg {
   height: 60px;
 }
 
+main .services-section .promt .elements .item h1,
+main .services-section .promt .elements .item p {
+  margin-top: 2rem;
+}
+
 main .services-section .promt .options {
   justify-content: center;
   gap: 2rem;
 }
 
 main .services-section .promt .options .n1,
-main .services-section .promt .options .n2{
+main .services-section .promt .options .n2 {
   flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  border-radius: var(--sm-border);
+  gap: 1rem;
+  padding: 1rem;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+main .services-section .promt .options .n1:hover,
+main .services-section .promt .options .n2:hover {
+  background-color: #cf454593;
+  transition: 0.5s;
+  color: white;
 }
 
 /* END THIRD SECTION */
 /* START FOURTH SECTION */
 
-main .testimonial-section .promt > .n1,
-main .testimonial-section .promt > .n2 {
+main .testimonial-section .promt .n1,
+main .testimonial-section .promt .n2 {
   position: absolute;
   background-color: white;
   height: 60px;
@@ -185,62 +217,30 @@ main .testimonial-section .promt > .n2 {
   border-radius: 50%;
   border: 1px solid black;
   cursor: pointer;
+  z-index: 3;
 }
 
-main .testimonial-section .promt > .n1 {
+main .testimonial-section .promt .n1 {
   left: 5rem;
 }
 
-main .testimonial-section .promt > .n2 {
+main .testimonial-section .promt .n2 {
   right: 5rem;
   rotate: 180deg;
 }
 
-main .testimonial-section .promt > .n1 svg,
-main .testimonial-section .promt > .n2 svg {
+main .testimonial-section .promt .n1 svg,
+main .testimonial-section .promt .n2 svg {
   width: 25px;
   height: 25px;
 }
 
-main .testimonial-section .promt .person {
-  padding: 0 2rem;
-  flex: 1;
-  text-align: center;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  gap: 1rem;
-}
-
-main .testimonial-section .promt .person svg {
-  width: 70px;
-  height: 70px;
-  background-color: white;
-  padding: 1rem;
-  border-radius: 50%;
-}
-
-main .testimonial-section .promt .person .person_info {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  gap: 0.5rem;
-}
-
 /* END FOURTH SECTION */
 
-/* START FIFTH SECTION */
-
-main section:nth-child(5) .promt .sub_promt .options {
-  width: 100%;
+main .CTA-section .promt .options {
   display: flex;
   justify-content: center;
-  gap: 2rem;
 }
-
-/* END FIFTH SECTION */
 
 /* BEGIN: Media Query for Big Screens */
 @media screen and (max-width: 1024px) {
@@ -256,10 +256,38 @@ main section:nth-child(5) .promt .sub_promt .options {
 
   main .benefits-section {
     flex-direction: column;
+    gap: 2rem;
+  }
+  main section {
+    margin-bottom: 4rem !important;
   }
 }
 
 @media screen and (max-width: 720px) {
+
+  main .main-banner {
+    background-attachment: scroll;
+    background-size: auto;
+    
+  }
+
+  
+  main .main-banner .promt p {
+    color: whitesmoke;
+    margin-top: 20%;
+  }
+
+  main .main-banner .promt h1 {
+    font-size: 3rem;
+    color: whitesmoke;
+    margin-top: 15%;
+  }
+
+  .subTitulo {
+    padding-top: 20px;
+    padding-bottom: 0px;
+  }
+
   main section:nth-child(n + 3) .promt .sub_promt {
     width: 90%;
   }
@@ -288,5 +316,12 @@ main section:nth-child(5) .promt .sub_promt .options {
     display: flex;
     flex-wrap: wrap;
   }
+
+  h1 {
+    font-size: 2rem !important;
+  }
+
+  h2 {
+    font-size: 1.5rem !important;
+  }
 }
-/* END: Media Query for Big Screens */

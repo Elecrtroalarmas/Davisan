@@ -1,0 +1,47 @@
+.floating-btns{
+    position: fixed;
+    height: 2rem;
+    width: 2rem;
+    bottom: 30px;
+    left: 20px;
+    display: flex;
+    gap: 1rem;
+}
+
+.floating-buttonpse:nth-child(1) {
+    left: 20px; 
+    bottom: 20px; 
+    width: 50px; 
+    height: 50px; 
+    border-radius: 50%; 
+    border: none; 
+    cursor: pointer; 
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.3); 
+    background-image: url('https://www.sifer.com.co/wp-content/uploads/2021/02/pse-forma.jpg'); 
+    background-size: cover; 
+    background-position: center; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.2rem; 
+    color: white; 
+}
+
+.floating-buttonpse-wpp{
+    background-image: url('https://media.es.wired.com/photos/6325168c64fe55a038bdcb0c/1:1/w_2501,h_2501,c_limit/WhatsApp_Logo_2-1.jpeg');
+    left: 20px; 
+    bottom: 20px; 
+    width: 50px; 
+    height: 50px; 
+    border-radius: 50%; 
+    border: none; 
+    cursor: pointer; 
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.3); 
+    background-size: cover; 
+    background-position: center; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.2rem; 
+    color: white; 
+}

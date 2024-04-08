@@ -33,9 +33,9 @@ class ChatComponent extends Component {
 
   render() {
     const trabajaConNosotrosUrl = 'https://www.google.com/?hl=es'; 
-    const whatsappUrl = 'https://www.google.com/?hl=es'; 
-    const masInformacionUrl = 'https://www.google.com/?hl=es'; 
-    const pagoDeFacturasUrl = 'https://www.google.com/?hl=es'; 
+    const whatsappUrl = 'https://wa.me/573112280450'; 
+    const masInformacionUrl = '/ContactUs/'; 
+    const pagoDeFacturasUrl = 'https://www.mipagoamigo.com/MPA_WebSite/ServicePayments/StartPayment?id=3967&searchedCategoryId=&searchedAgreementName=DAVISAN%20LTDA'; 
 
     return (
       <ThemeProvider theme={chatTheme}>
@@ -75,7 +75,7 @@ class ChatComponent extends Component {
             id: '4',
             options: [
               { value: 'preguntas_frecuentes', label: 'Preguntas Frecuentes', trigger: 'preguntas_frecuentes' },
-              { value: 'trabaja_con_nosotros', label: 'Trabaja con Nosotros', trigger: 'trabaja_con_nosotros' },
+              // { value: 'trabaja_con_nosotros', label: 'Trabaja con Nosotros', trigger: 'trabaja_con_nosotros' },
               { value: 'pago_de_facturas', label: 'Pago de Facturas', trigger: 'pago_de_facturas' },
               { value: 'contactanos', label: 'Contáctanos', trigger: 'contactanos' },
             ],
@@ -112,11 +112,11 @@ class ChatComponent extends Component {
             end: true,
           },
           
-          {
-            id: 'trabaja_con_nosotros',
-            message: 'Para más información sobre trabajar con nosotros, dirígete a:',
-            trigger: 'trabaja_con_nosotros_url',
-          },
+          // {
+          //   id: 'trabaja_con_nosotros',
+          //   message: 'Para más información sobre trabajar con nosotros, dirígete a:',
+          //   trigger: 'trabaja_con_nosotros_url',
+          // },
           {
             id: 'trabaja_con_nosotros_url',
             component: (
@@ -193,17 +193,16 @@ class ChatComponent extends Component {
                   margin: '10px',
                 }}
               >
-                <a
-                  href={masInformacionUrl}
-                  target="_blank"
-                  rel="noopener noreferrer"
+                <Link
+                  to="/ContactUs"
+                  className="active"
                   style={{
                     color: 'white',
                     textDecoration: 'none',
                   }}
                 >
-                  Mas información
-                </a>
+                  Más información
+                </Link>
               </div>
             ),
             end: true,

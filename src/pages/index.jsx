@@ -2,12 +2,13 @@ import * as React from "react";
 import Header from "../components/header/header";
 import Footer from "../components/footer/footer";
 import Button from "../components/buttons/button";
+import { CardSwipe } from "../components/card-swiper/card-swiper";
+import { Link } from "gatsby";
 import { RiBox2Line } from "react-icons/ri";
-import { FaUser } from "react-icons/fa";
-import { FaArrowLeftLong } from "react-icons/fa6";
 import "./root.css";
 import "./index.css";
 import FloatingButton from "../components/floatingButtonComponent";
+import FloatingButtonPse from "../components/floatingButtonPseComponent";
 
 const IndexPage = () => {
   return (
@@ -16,147 +17,131 @@ const IndexPage = () => {
       <main>
         <section className="main-banner">
           <div className="promt">
-            <h1>Enhance your security with Our Trusted Solutions</h1>
+            <h1>Tu seguridad nuestra prioridad</h1>
             <p>
-              Our solutions are designed to help you to protect your business,
-              your customers, and your employees.
+              DAVISAN SECURITY LTDA, empresa de Seguridad y Vigilancia Privada
+              netamente colombiana, con visión de servicios para toda la
+              Sociedad.
             </p>
             <div className="options">
-              <Button text="Learn More" />
-              <Button text="Contact us" />
+              <Link to="/aboutUs">
+                <Button text="Conocenos" />
+              </Link>
+              <Link to="/ContactUs">
+                <Button text="Contactanos" />
+              </Link>
             </div>
           </div>
         </section>
-        <section className="benefits-section">
-          <div className="promt">
-            <h1>
-              Enhance Security with Our State-of-the-Art Physical Protection
-              Solutions
-            </h1>
-            <p>
-              Our physical security product offers advanced features and
-              cutting-edge technology to ensure the safety of your premises.
-              With our reliable solutions, you can have peace of mind knowing
-              that your property is well-protected.
-            </p>
-            <div className="options">
-              <div className="n1">
-                <h1>Quote</h1>
-                <p>Robust Security Features</p>
-              </div>
-              <div className="n2">
-                <h1>Quote</h1>
-                <p>Robust Security Features</p>
+
+        <hr />
+
+        <section className="valores-section">
+          <div className="valorescon" id="valorescon">
+            <div className="containerValores">
+              <h1 className="subTitulo">Por qué elegirnos </h1>
+              <div className="valoresList">
+                <div>
+                  <picture>
+                    <source srcSet="/calificacion.png" />
+                    <img src="/calificacion.png" alt="personal calificado" />
+                  </picture>
+                  <h2>Personal calificado</h2>
+                </div>
+                <div>
+                  <picture>
+                    <source srcSet="/consultoria.png" />
+                    <img src="/consultoria.png" alt="Consultoria" />
+                  </picture>
+                  <h2>Expertos en consultoría</h2>
+                </div>
+                <div>
+                  <picture>
+                    <source srcSet="/integracion.png" />
+                    <img src="/integracion.png" alt="integracion tecnologica" />
+                  </picture>
+                  <h2>Integración tecnológica</h2>
+                </div>
               </div>
             </div>
-          </div>
-          <div className="image">
-            <img
-              src="https://t3.ftcdn.net/jpg/02/48/42/64/360_F_248426448_NVKLywWqArG2ADUxDq6QprtIzsF82dMF.jpg"
-              alt="propImage"
-            />
           </div>
         </section>
         <section className="services-section">
           <div className="promt">
             <div className="sub_promt">
-              <p>Protecting What Matters Most</p>
-              <h1>Advanced Surveillance Solutions</h1>
-              <p>
-                Our physical security products provide cutting-edge technology
-                and reliable solutions to keep your property, assets, and loved
-                ones safe. With our advanced surveillance systems, access
-                control systems, and intrusion detection systems, you can have
-                peace of mind knowing that your security is in good hands. We
-                also offer 24/7 monitoring services to ensure round-the-clock
-                protection.
-              </p>
+              <h1>Más de una Década de Excelencia protegiendo</h1>
+              <p>Protegemos lo que verdaderamente importa</p>        
+
             </div>
             <div className="elements">
               <div className="item">
-                <RiBox2Line />
+                <img  
+                  width="64" 
+                  height="64" 
+                  src="https://img.icons8.com/ios/64/security-guard.png" 
+                  alt="security-guard"
+                />
 
-                <h1>Access Control Systems</h1>
+                <h1>Vigilancia Humana Profesional</h1>
                 <p>
-                  Our advanced surveillance solutions utilize state-of-the-art
-                  cameras and analytics to provide real-time monitoring and
-                  proactive threat detection.
+                  Más de 25 clientes confían en nuestro equipo de vigilancia
+                  humana para proteger sus espacios comerciales y residenciales
+                  con profesionalismo y atención personalizada.
                 </p>
               </div>
               <div className="item">
-                <RiBox2Line />
+                <img 
+                  width="64" 
+                  height="64" 
+                  src="https://img.icons8.com/pastel-glyph/64/private-wall-mount-camera.png" 
+                  alt="private-wall-mount-camera"
+                />
 
-                <h1>Intrusion Detection Systems</h1>
+                <h1>Monitoreo Avanzado de Alarmas</h1>
                 <p>
-                  Our access control systems allow you to restrict access to
-                  authorized personnel only, enhancing security and preventing
-                  unauthorized entry.
+                  Más de 329 abonados confían en nuestro servicio de monitoreo
+                  de alarmas para proteger sus propiedades. 
                 </p>
               </div>
               <div className="item">
-                <RiBox2Line />
+                <img 
+                  width="64" 
+                  height="64" 
+                  src="https://img.icons8.com/glyph-neue/64/clock--v1.png" 
+                  alt="clock--v1"
+                />
 
-                <h1>24/7 Monitoring Services</h1>
+                <h1>Cuenta con nuestra trayectoria</h1>
                 <p>
-                  Our intrusion detection systems use advanced sensors and
-                  alarms to detect and deter intruders, providing an additional
-                  layer of security for your property.
+                  Con más de 10 años de experiencia, prometemos una respuesta rápida y 
+                  efectiva las 24 horas del día.
                 </p>
               </div>
             </div>
             <div className="options">
-              <div className="n1">
-                <Button text="Learn More" />
-              </div>
               <div className="n2">
-                <Button text="Learn More" />
+                <Link
+                  to="/aboutUs"
+                  className="active"
+                  style={{
+                    color: 'white',
+                    textDecoration: 'none',
+                  }}
+                >
+                  <Button text="Leer más" /> 
+                </Link>
               </div>
             </div>
           </div>
         </section>
         <section className="testimonial-section">
           <div className="promt">
-            <div className="n1">
-              <FaArrowLeftLong />
-            </div>
-            <div className="n2">
-              <FaArrowLeftLong />
-            </div>
-            <div className="sub_promt">
-              <h2>Idk icon</h2>
-              <h2>
-                Our physical security product has been a game-changer for our
-                organization. Highly recommended!
-              </h2>
-              <div className="person">
-                <FaUser />
-                <div className="person_info">
-                  <p>
-                    <strong>John Doe</strong>
-                  </p>
-                  <p>CEO, Company</p>
-                </div>
-              </div>
-            </div>
-          </div>
-        </section>
-        <section className="CTA-section">
-          <div className="promt">
-            <div className="sub_promt">
-              <h1>Unlock Your Security Potential</h1>
-              <p>
-                Schedule a consultation or request more information to learn how
-                our physical security solutions can protect your business.
-              </p>
-              <div className="options">
-                <Button text="Schedule" />
-                <Button text="Request" />
-              </div>
-            </div>
+            <CardSwipe />
           </div>
         </section>
       </main>
       <Footer />
+      <FloatingButtonPse />
       <FloatingButton />
     </>
   );

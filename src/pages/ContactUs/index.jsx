@@ -1,8 +1,10 @@
 import * as React from "react";
 import { useState } from "react";
+import { Link, navigate } from "gatsby";
 import Header from "../../components/header/header";
 import Footer from "../../components/footer/footer";
 import FloatingButton from "../../components/floatingButtonComponent";
+import FloatingButtonPse from "../../components/floatingButtonPseComponent"
 import "./index.css";
 
 const ContactUs = () => {
@@ -53,8 +55,10 @@ const ContactUs = () => {
               {/* form box */}
               <div className="contact form">
                 <h3>Envia un mensaje</h3>
-                <form action="https://formspree.io/f/xnqeavrz"
-                method="POST">
+                <form
+                  action="https://formspree.io/f/mgegvlqq"
+                  method="POST"
+                >
                   <div className="formBox">
                     <div className="row50">
                       <div className="inputBox">
@@ -124,11 +128,11 @@ const ContactUs = () => {
                       />
                     </span>
                     <a
-                      href="mailto:correo@gmail.com"
+                      href="mailto:contactenos@davisan.com.co"
                       target="_blank"
                       rel="noopener noreferrer"
                     >
-                      correo@gmail.com
+                      contactenos@davisan.com.co
                     </a>
                   </div>
 
@@ -167,16 +171,15 @@ const ContactUs = () => {
                     </li>
                     <li>
                       <a
-                        href="https://twitter.com/?lang=es"
+                        href="https://wa.me/573112280450"
                         target="_blank"
                         rel="noopener noreferrer"
                       >
-                        <img
-                          width="35"
-                          height="35"
-                          src="https://img.icons8.com/ios-glyphs/35/FFFFFF/twitterx--v2.png"
-                          alt="twitterx--v2"
-                        />
+                        <img 
+                          width="35" 
+                          height="35" 
+                          src="https://img.icons8.com/ios/35/FFFFFF/whatsapp--v1.png" 
+                          alt="whatsapp--v1"/>
                       </a>
                     </li>
                     <li>
@@ -220,6 +223,7 @@ const ContactUs = () => {
         </section>
       </main>
       <Footer />
+      <FloatingButtonPse />
       <FloatingButton />
     </>
   );
@@ -227,4 +231,4 @@ const ContactUs = () => {
 
 export default ContactUs;
 
-export const Head = () => <title>ContactUs Page</title>;
+export const Head = () => <title>Contáctanos</title>;

@@ -12,10 +12,12 @@
     height: 400px;
     background-position: center;
     text-align: center;
+    width: 100%;
+    background-repeat: no-repeat;
   }
   
   .four_zero_four_bg h1 {
-    font-size: 80px;
+    font-size: 100px;
   }
   
   .contant_box_404 {

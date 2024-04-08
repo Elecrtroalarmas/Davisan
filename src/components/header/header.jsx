@@ -28,7 +28,10 @@ export default function Header() {
           <source srcSet="/icon.png" />
           <img src="/icon.png" alt="logo" className="logo" />
         </picture>
-        <h1>Davisan</h1>
+        <picture>
+          <source srcSet="/nombreDavisan.png" />
+          <img src="/nombre.png" alt="logo" className="logoname" />
+        </picture>
       </div>
       <nav ref={navRef}>
         <ul>
@@ -38,7 +41,7 @@ export default function Header() {
               onClick={() => handleLinkClick("aboutUs/")}
               className={activeLink === "aboutUs/" ? "active" : ""}
             >
-              About Us
+              Acerca de nosotros
             </Link>
           </li>
           <li>
@@ -47,7 +50,7 @@ export default function Header() {
               onClick={() => handleLinkClick("services/")}
               className={activeLink === "services/" ? "active" : ""}
             >
-              services
+              Servicios
             </Link>
           </li>
           <li>
@@ -56,7 +59,7 @@ export default function Header() {
               onClick={() => handleLinkClick("ContactUs/")}
               className={activeLink === "ContactUs/" ? "active" : ""}
             >
-              Contact Us
+              Contáctanos
             </Link>
           </li>
           <button className="nav-btn nav-close-btn" onClick={showNavBar}>

@@ -23,6 +23,7 @@ main .infinite-scroll {
   position: relative;
   height: 100%;
   width: 100%;
+  overflow: hidden;
 }
 
 main .infinite-scroll > h1 {
@@ -31,6 +32,7 @@ main .infinite-scroll > h1 {
   color: var(--color-primary);
   margin-bottom: 1rem;
   text-transform: uppercase;
+  text-align: center;
 }
 
 main .infinite-scroll .father::before {
@@ -45,7 +47,7 @@ main .infinite-scroll .father::before {
     rgba(255, 255, 255, 1) 0%,
     rgba(255, 255, 255, 0) 100%
   );
-  z-index: 2;
+  z-index: 1;
 }
 
 main .infinite-scroll .father::after {
@@ -80,10 +82,28 @@ main .infinite-scroll .container .card {
   margin: 0 5rem;
 }
 
+main .infinite-scroll .container .card .card-image picture {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 350px;
+  width: 500px;
+  border-radius: var(--sm-border);
+  overflow: hidden;
+  margin-bottom: 2rem;
+  cursor: pointer;
+}
+
 main .infinite-scroll .container .card .card-image picture img {
-  max-width: 500px;
-  max-height: 300px;
   object-fit: cover;
+  cursor: pointer;
+  width: inherit;
+  height: inherit;
+}
+
+main .infinite-scroll .container .card:hover picture img {
+  transform: scale(1.2);
+  transition: transform 0.3s;
 }
 
 .inverse {
@@ -91,6 +111,26 @@ main .infinite-scroll .container .card .card-image picture img {
   flex-direction: row-reverse;
   margin-right: 10rem;
   text-align: right;
+}
+
+section .image picture {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  max-height: 500px;
+  max-width: 800px;
+  width: 100%;
+  border-radius: var(--sm-border);
+  overflow: hidden;
+}
+
+section .image picture img {
+  min-width: 350px;
+  min-height: 200px;
+  object-fit: cover;
+  width: inherit;
+  height: inherit;
+  border-radius: var(--sm-border);
 }
 
 @keyframes infinite-scroll {
@@ -105,5 +145,24 @@ main .infinite-scroll .container .card .card-image picture img {
 @media screen and (max-width: 1024px) {
   .inverse {
     margin-right: 0;
+  }
+}
+
+@media screen and (max-width: 720px) {
+  main .title {
+    padding-left: 0;
+  }
+  main .infinite-scroll .container .card .card-image picture {
+    height: 300px;
+  }
+  main .infinite-scroll .container .card .card-image picture img {
+    min-width: 200px;
+    min-height: 150px;
+  }
+  main .infinite-scroll .father::before {
+    width: 3rem;
+  }
+  main .infinite-scroll .father::after {
+    width: 3rem;
   }
 }
