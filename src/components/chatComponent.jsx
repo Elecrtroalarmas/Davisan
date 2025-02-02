@@ -2,8 +2,6 @@ import React, { Component } from 'react';
 import { ThemeProvider } from 'styled-components';
 import ChatBot from 'react-simple-chatbot';
 import '../styles/chatStyle.css';
-//import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import {} from '@fortawesome/free-solid-svg-icons';
 import { Link } from "gatsby";
 
 const chatTheme = {
@@ -32,10 +30,10 @@ class ChatComponent extends Component {
   };
 
   render() {
-    const trabajaConNosotrosUrl = 'https://www.google.com/?hl=es'; 
+
     const whatsappUrl = 'https://wa.me/573112280450'; 
-    const masInformacionUrl = '/ContactUs/'; 
     const pagoDeFacturasUrl = 'https://www.mipagoamigo.com/MPA_WebSite/ServicePayments/StartPayment?id=3967&searchedCategoryId=&searchedAgreementName=DAVISAN%20LTDA'; 
+    const aplicarVacanteUrl = 'https://docs.google.com/forms/d/e/1FAIpQLSeDHYZoU_qFq5w2crpgNiBpYuRxRiJvF8BZjyUiGD9NjuSDLw/viewform?usp=header';
 
     return (
       <ThemeProvider theme={chatTheme}>
@@ -75,11 +73,47 @@ class ChatComponent extends Component {
             id: '4',
             options: [
               { value: 'preguntas_frecuentes', label: 'Preguntas Frecuentes', trigger: 'preguntas_frecuentes' },
-              // { value: 'trabaja_con_nosotros', label: 'Trabaja con Nosotros', trigger: 'trabaja_con_nosotros' },
               { value: 'pago_de_facturas', label: 'Pago de Facturas', trigger: 'pago_de_facturas' },
               { value: 'contactanos', label: 'Contáctanos', trigger: 'contactanos' },
+              { value: 'aplicar_a_vacante', label: 'Aplicar a una vacante', trigger: 'aplicar_a_vacante' },
             ],
           },
+          {
+            id: 'aplicar_a_vacante',
+            message: 'Para aplicar a una vacante disponible, haz clic en el siguiente botón:',
+            trigger: 'aplicar_a_vacante_url',
+          },
+          {
+            id: 'aplicar_a_vacante_url',
+            component: (
+              <div
+                style={{
+                  backgroundColor: '#eb3237',
+                  borderRadius: '10px',
+                  padding: '10px',
+                  textAlign: 'center',
+                  margin: '10px',
+                }}
+              >
+                <a
+                  href={aplicarVacanteUrl}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  style={{
+                    color: 'white',
+                    textDecoration: 'none',
+                    padding: '10px',
+                    borderRadius: '5px',
+                    fontSize: '16px',
+                    fontWeight: 'bold',
+                  }}
+                >
+                  Aplicar
+                </a>
+              </div>
+            ),
+            end: true,
+          },          
           {
             id: 'preguntas_frecuentes',
             message: 'Para más información sobre preguntas frecuentes, visita:',
@@ -111,39 +145,6 @@ class ChatComponent extends Component {
             ),
             end: true,
           },
-          
-          // {
-          //   id: 'trabaja_con_nosotros',
-          //   message: 'Para más información sobre trabajar con nosotros, dirígete a:',
-          //   trigger: 'trabaja_con_nosotros_url',
-          // },
-          {
-            id: 'trabaja_con_nosotros_url',
-            component: (
-              <div
-                style={{
-                  backgroundColor: '#eb3237',
-                  borderRadius: '10px',
-                  padding: '10px',
-                  textAlign: 'center',
-                  margin: '10px',
-                }}
-              >
-                <a
-                  href={trabajaConNosotrosUrl}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  style={{
-                    color: 'white',
-                    textDecoration: 'none',
-                  }}
-                >
-                  Trabaja con nosotros
-                </a>
-              </div>
-            ),
-            end: true,
-          },          
           {
             id: 'contactanos',
             message: '¿Cómo prefieres comunicarte con nosotros?',
