@@ -53,24 +53,30 @@ const preguntasFre = () => {
 
 
             <div className="tab">
-                <input type="radio" name="acc" id="acc3" />
-                <label htmlFor="acc3">
-                    <h2>03</h2>
-                    <h3>¿Cómo puedo aplicar a una vacante?</h3>
-                    <div className="content">
-                        <p>
-                        Para aplicar a una de nuestras vacantes, puedes enviarnos un correo a 
-                        nuestro correo:
-                        <br />
-                        <br />    
-                        <a
-                          href="mailto:contactenos@davisan.com.co"
-                          target="_blank">
-                             contactenos@davisan.com.co
-                        </a>
-                        </p>
-                    </div>
-                </label>
+              <input type="radio" name="acc" id="acc3" />
+              <label htmlFor="acc3">
+                <h2>03</h2>
+                <h3>¿Cómo puedo aplicar a una vacante?</h3>
+                <div className="content">
+                  <p>
+                    Para aplicar a una de nuestras vacantes, haz clic en el siguiente enlace para completar el formulario:
+                  <br />
+                  <br />
+                  <a
+                    href="https://docs.google.com/forms/d/e/1FAIpQLSeDHYZoU_qFq5w2crpgNiBpYuRxRiJvF8BZjyUiGD9NjuSDLw/viewform?usp=header"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    style={{
+                      color: '#eb3237',
+                      fontWeight: 'bold',
+                      textDecoration: 'underline'
+                    }}
+                  >
+                    Formulario de Aplicación
+                  </a>
+                  </p>
+                </div>
+              </label>
             </div>
 
 
